@@ -1,0 +1,42 @@
+.rt-widget .buy-pill.small {
+    height: 30px;
+    font-size: 16px
+}
+
+.rt-widget .topbar-text * {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1;
+ /*  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+@media (max-width: 800px) {
+  .rt-widget .topbar-text * {
+    font-size: 14px;
+  }
+}
+@media (max-width: 680px) {
+  .rt-widget .topbar-text * {
+    font-size: 12px;
+  }
+}
+
+/* Ajuste de altura y overflow para .tw-slide */
+.rt-widget .tw-slide {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.rt-widget .topbar-text {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  width: 100%;
+  word-break: break-word;
+}

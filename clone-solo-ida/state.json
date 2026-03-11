@@ -1,0 +1,1210 @@
+{
+  "localStorage": [
+    [
+      "_smvc",
+      "{\"_v\":{\"r\":[],\"p\":[{\"id\":\"bf2b14d4-1c0c-4b3c-84da-396a5aefc46c\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":null,\"close\":false,\"ignore\":null},\"exit\":false,\"delay\":1000,\"range\":null,\"scroll\":0,\"display\":{\"i\":0,\"t\":\"ev\",\"fi\":null,\"ti\":null,\"mdt\":null}},\"ohp\":false,\"url\":[\"/co/es/vuelos-\"],\"pUrl\":\"/api/popup/basic/108836eb151681e6/9e096288-1a30-407e-b00b-a8d14f93bc45.htm\",\"type\":\"BASIC\",\"ucad\":false,\"exurl\":[],\"domain\":\"**\",\"formId\":\"9e096288-1a30-407e-b00b-a8d14f93bc45\",\"mobile\":false,\"monitored\":\"A\"},{\"id\":\"7a8bc699-a374-45e7-9c3d-07e30e525822\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":null,\"close\":false,\"ignore\":null},\"exit\":false,\"delay\":1000,\"range\":null,\"scroll\":0,\"display\":{\"i\":0,\"t\":\"ev\",\"fi\":null,\"ti\":null,\"mdt\":null}},\"ohp\":false,\"url\":[\"/pe/es/vuelos-\"],\"pUrl\":\"/api/popup/basic/108836eb151681e6/35a127dd-4707-4bf1-bb3b-a2b517037931.htm\",\"type\":\"BASIC\",\"ucad\":false,\"exurl\":[],\"domain\":\"**\",\"formId\":\"35a127dd-4707-4bf1-bb3b-a2b517037931\",\"mobile\":false,\"monitored\":\"A\"},{\"id\":\"e87cd428-5c50-4d06-b86e-ea3b8cc19124\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":null,\"close\":false,\"ignore\":null},\"exit\":false,\"delay\":1000,\"range\":null,\"scroll\":0,\"display\":{\"i\":0,\"t\":\"ev\",\"fi\":null,\"ti\":null,\"mdt\":null}},\"ohp\":false,\"url\":[\"/ar/es/vuelos-\"],\"pUrl\":\"/api/popup/basic/108836eb151681e6/3a5b5de9-da1e-40bc-bcc3-aa680e3ccc81.htm\",\"type\":\"BASIC\",\"ucad\":false,\"exurl\":[],\"domain\":\"**\",\"formId\":\"3a5b5de9-da1e-40bc-bcc3-aa680e3ccc81\",\"mobile\":false,\"monitored\":\"A\"},{\"id\":\"c86ac785-5c25-442f-98b9-c31569ee0f93\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":null,\"close\":false,\"ignore\":null},\"exit\":false,\"delay\":1000,\"range\":null,\"scroll\":0,\"display\":{\"i\":0,\"t\":\"ev\",\"fi\":null,\"ti\":null,\"mdt\":null}},\"ohp\":false,\"url\":[\"/uy/es/vuelos-\"],\"pUrl\":\"/api/popup/basic/108836eb151681e6/5a3fed5b-e082-4dd2-8a7c-c160c3257c54.htm\",\"type\":\"BASIC\",\"ucad\":false,\"exurl\":[],\"domain\":\"**\",\"formId\":\"5a3fed5b-e082-4dd2-8a7c-c160c3257c54\",\"mobile\":false,\"monitored\":\"A\"},{\"id\":\"7f9cf53b-98f3-4142-9afb-cdbab14182ef\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":null,\"close\":false,\"ignore\":null},\"exit\":false,\"delay\":1000,\"range\":null,\"scroll\":0,\"display\":{\"i\":0,\"t\":\"ev\",\"fi\":null,\"ti\":null,\"mdt\":null}},\"ohp\":false,\"url\":[\"/us/en/flights-\"],\"pUrl\":\"/api/popup/basic/108836eb151681e6/fbe98eba-1dd4-4e5a-962e-ba21e8e1653f.htm\",\"type\":\"BASIC\",\"ucad\":false,\"exurl\":[],\"domain\":\"**\",\"formId\":\"fbe98eba-1dd4-4e5a-962e-ba21e8e1653f\",\"mobile\":false,\"monitored\":\"A\"}],\"c\":[{\"id\":\"8e3d81ce-e1b3-4555-9528-f21f98ca63b7\",\"location\":{\"domain\":[\"\"],\"filterType\":\"CONTAINS\",\"url\":[\"cl/es/nuevos-del-aire\"],\"exurl\":[],\"mobile\":true,\"ohp\":false},\"language\":{\"type\":\"browser\"},\"botActive\":false,\"consultantConnected\":{\"display\":false,\"textType\":\"DEFAULT\",\"text\":\"\"},\"defaultConsultant\":{\"name\":\"SALESmanago\",\"avatar\":{\"url\":\"https://salesmanago.s3-eu-west-1.amazonaws.com/chat/peter.png\",\"fileName\":\"peter.png\"}},\"display\":\"BUTTON\",\"launch\":{\"shape\":\"CIRCLE\",\"type\":\"fa-comment\",\"buildType\":\"ICON\",\"bottom\":20,\"horizontal\":25,\"image\":{\"url\":\"https://salesmanago.s3-eu-west-1.amazonaws.com/chat/background.png\",\"fileName\":\"background.png\"}},\"colors\":{\"main\":\"linear-gradient(-10deg, #495c73 0%, #cad0d6 100%)\",\"mainFont\":\"#ffffff\",\"additional\":\"#f3f3f3\",\"additionalFont\":\"#666666\",\"background\":\"#ffffff\",\"info\":\"#9c9c9c\",\"footerBackground\":\"#ffffff\",\"button\":\"#495c73\"},\"borderRadius\":0,\"shadow\":{\"add\":true,\"color\":\"rgba(0, 0, 0, 0.2)\",\"blur\":20},\"fontSize\":13,\"fontHref\":\"https://fonts.googleapis.com/css2?family=Open+Sans&display=swap\",\"request\":{\"display\":\"BEGIN\",\"monitored\":\"ANONYMOUS\",\"fieldType\":\"FULL\",\"showLabels\":true,\"showPlaceholders\":true,\"sendTo\":[],\"fields\":[{\"type\":\"NAME\",\"required\":false,\"checkbox\":false,\"label\":{\"text\":\"Full name\",\"fontColor\":\"#676A6C\"},\"placeholder\":{\"text\":\"John Doe\"},\"consent\":null,\"selectedDictDetail\":null,\"loyaltyProgram\":null,\"selectedContactAttribute\":null,\"selectList\":[]},{\"type\":\"EMAIL\",\"required\":false,\"checkbox\":false,\"label\":{\"text\":\"Email address\",\"fontColor\":\"#676A6C\"},\"placeholder\":{\"text\":\"email.address@example.com\"},\"consent\":null,\"selectedDictDetail\":null,\"loyaltyProgram\":null,\"selectedContactAttribute\":null,\"selectList\":[]}],\"colors\":null},\"inactive\":{\"fields\":[{\"type\":\"NAME\",\"required\":false,\"checkbox\":false,\"label\":{\"text\":\"Full name\",\"fontColor\":\"#676A6C\"},\"placeholder\":{\"text\":\"John Doe\"},\"consent\":null,\"selectedDictDetail\":null,\"loyaltyProgram\":null,\"selectedContactAttribute\":null,\"selectList\":[]},{\"type\":\"EMAIL\",\"required\":false,\"checkbox\":false,\"label\":{\"text\":\"Email address\",\"fontColor\":\"#676A6C\"},\"placeholder\":{\"text\":\"email.address@example.com\"},\"consent\":null,\"selectedDictDetail\":null,\"loyaltyProgram\":null,\"selectedContactAttribute\":null,\"selectList\":[]}],\"fieldType\":\"FULL\",\"showLabels\":true,\"showPlaceholders\":true,\"sendTo\":[],\"display\":true,\"colors\":{\"main\":\"linear-gradient(-10deg, #495c73 0%, #cad0d6 100%)\",\"mainFont\":\"#ffffff\"}},\"showBanner\":false,\"alignment\":\"RIGHT\",\"banner\":{\"content\":{\"text\":\"<b>Hello!</b><br>Is there anything<br>I can help you with?\",\"align\":\"left\"},\"addMessage\":true,\"addBackground\":false,\"image\":{\"url\":\"https://salesmanago.s3-eu-west-1.amazonaws.com/chat/background.png\",\"fileName\":\"background.png\"},\"blur\":0,\"transparency\":100},\"welcomeMessage\":{\"content\":{\"text\":\"<b>Hello!</b><br>Do you need any help?<br>Let’s talk!<br>\",\"align\":\"left\"},\"show\":false},\"avgResponseTime\":false,\"ratingEnabled\":false,\"showPrevConversations\":false,\"replaceAvatar\":false,\"showAllPrevConversations\":false,\"daysBefore\":0,\"displayIndicator\":true}],\"f\":[{\"ac\":false,\"id\":\"3d376ae7-59c4-44f6-9abd-f791118904ba\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/do/es/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"24939aa7-394e-493f-b4fa-e81aa2ff450a\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/us/en/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"a59393ac-fef6-487d-ad83-bd851c600319\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/ec/es/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"afce5ebe-c410-4c53-9736-31a39df85250\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/pe/es/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"0c847056-df64-4966-840c-1ee57b07b7c3\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/ar/es/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"47a99f5c-b2ed-4f26-9d02-c382cdc4e89e\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/cl/es/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"bd0064e7-1b2f-4068-bb42-e4823f59d483\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/br/pt/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"7e90751e-9d33-49f1-a247-54afb63bc638\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/py/es/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"50b0918d-69f5-4a46-ab40-03534caaef4c\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/co/es/\"],\"exurl\":[],\"domain\":\"**\"},{\"ac\":false,\"id\":\"0ee9aa42-2d22-443d-8231-47544ebdfef8\",\"nf\":true,\"rv\":24,\"act\":true,\"ddt\":2,\"ohp\":false,\"url\":[\"/uy/es/\"],\"exurl\":[],\"domain\":\"**\"}],\"i\":[],\"ap\":[{\"id\":\"bed713cc-2b34-4a48-b46a-a95cd0e43bc4\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":true,\"close\":true,\"ignore\":true},\"exit\":true,\"delay\":0,\"range\":null,\"scroll\":0,\"display\":{\"i\":3,\"t\":\"xv\",\"fi\":null,\"ti\":null,\"mdt\":1}},\"ohp\":false,\"url\":[\"V2/Flight?Culture=es-CO\"],\"pUrl\":\"/api/advanced/popup/data.html?id=55&vsid=108836eb151681e6&utm_source=salesmanago&utm_medium=pop-up\",\"tags\":null,\"type\":\"ADVANCED\",\"ucad\":false,\"exurl\":[],\"domain\":\"booking.jetsmart.com\",\"formId\":\"4c74cde9-1e2a-4eb8-be02-cfbc441d382e\",\"mobile\":true,\"desktop\":true,\"monitored\":\"A\"},{\"id\":\"f22750bc-8ed2-40c1-b57f-85e7680b532b\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":true,\"close\":true,\"ignore\":true},\"exit\":true,\"delay\":0,\"range\":null,\"scroll\":0,\"display\":{\"i\":3,\"t\":\"xv\",\"fi\":null,\"ti\":null,\"mdt\":1}},\"ohp\":false,\"url\":[\"V2/Flight?Culture=es-PE\"],\"pUrl\":\"/api/advanced/popup/data.html?id=56&vsid=108836eb151681e6&utm_source=salesmanago&utm_medium=pop-up\",\"tags\":null,\"type\":\"ADVANCED\",\"ucad\":false,\"exurl\":[],\"domain\":\"booking.jetsmart.com\",\"formId\":\"34285a95-16e1-4104-8193-69bdbd742807\",\"mobile\":true,\"desktop\":true,\"monitored\":\"A\"},{\"id\":\"b4fe66de-fadd-4f69-b331-5f470d84216f\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":true,\"close\":true,\"ignore\":true},\"exit\":true,\"delay\":0,\"range\":null,\"scroll\":0,\"display\":{\"i\":3,\"t\":\"xv\",\"fi\":null,\"ti\":null,\"mdt\":1}},\"ohp\":false,\"url\":[\"V2/Flight?Culture=es-CL\"],\"pUrl\":\"/api/advanced/popup/data.html?id=57&vsid=108836eb151681e6&utm_source=salesmanago&utm_medium=pop-up\",\"tags\":null,\"type\":\"ADVANCED\",\"ucad\":false,\"exurl\":[],\"domain\":\"booking.jetsmart.com\",\"formId\":\"3c9db88b-6dfc-4578-b7f2-76592d15185a\",\"mobile\":true,\"desktop\":true,\"monitored\":\"A\"},{\"id\":\"3953e3fe-f8e1-4941-a858-456bddad64f5\",\"cfg\":{\"pd\":0,\"pm\":0,\"gap\":null,\"nsa\":{\"click\":true,\"close\":true,\"ignore\":true},\"exit\":true,\"delay\":0,\"range\":null,\"scroll\":0,\"display\":{\"i\":3,\"t\":\"xv\",\"fi\":null,\"ti\":null,\"mdt\":1}},\"ohp\":false,\"url\":[\"V2/Flight?Culture=es-AR\"],\"pUrl\":\"/api/advanced/popup/data.html?id=58&vsid=108836eb151681e6&utm_source=salesmanago&utm_medium=pop-up\",\"tags\":null,\"type\":\"ADVANCED\",\"ucad\":false,\"exurl\":[],\"domain\":\"booking.jetsmart.com\",\"formId\":\"4c513bd2-f1f0-4940-83d2-eb3cfe23ee37\",\"mobile\":true,\"desktop\":true,\"monitored\":\"A\"}],\"s\":[],\"vs\":[],\"nc\":[],\"ncl\":[],\"pc\":[],\"wes\":[{\"d\":null,\"s\":\"fb42a387-e4ef-4a34-8cd7-5ffd24b8cf58\",\"t\":\"CONTACT_FORM\",\"pl\":null,\"st\":null,\"eId\":\"1f3d156f-906a-4ebe-9c0d-30a665ef8a5d\",\"gaId\":null},{\"d\":\"booking.jetsmart.com\",\"s\":\"fb0b5701-1724-440e-aee6-993fa48a4459\",\"t\":\"CONTACT_FORM\",\"pl\":null,\"st\":null,\"eId\":\"c52357e4-651c-47ab-a666-4faad6b89bf4\",\"gaId\":null},{\"d\":null,\"s\":\"ba4bbfd0-45f6-4cd2-9014-f45fc9b0f0e0\",\"t\":\"CONTACT_FORM\",\"pl\":null,\"st\":null,\"eId\":\"e5022b46-d278-4029-a11d-08bd96b76f80\",\"gaId\":null}],\"cfs\":null,\"a\":93,\"fa\":false,\"csk\":\"\",\"e\":{\"pid\":null,\"list\":null},\"war\":null,\"av\":true,\"lcid\":null,\"_isSmApp\":false,\"_instanceId\":93},\"_ts\":1773125477705}"
+    ],
+    [
+      "pa",
+      "sid=bbd7mgb6&sst=1773125177&sis=3&rv=0"
+    ],
+    [
+      "__rtbh.lid",
+      "{\"eventType\":\"lid\",\"id\":\"VYrjkTEGkvsAEAxuwxL7\",\"expiryDate\":\"2027-03-10T06:47:44.938Z\"}"
+    ],
+    [
+      "culture",
+      "es_co"
+    ],
+    [
+      "tealium_timing",
+      "{\"domain\":\"booking.jetsmart.com\",\"pathname\":\"/V2/Payment\",\"query_string\":\"sh=MDEyMzQ=\",\"timestamp\":1773125434223,\"dns\":0,\"connect\":0,\"response\":4,\"dom_loading_to_interactive\":1091,\"dom_interactive_to_complete\":2665,\"load\":2,\"time_to_first_byte\":728,\"front_end\":3820,\"fetch_to_response\":728,\"fetch_to_complete\":4552,\"fetch_to_interactive\":1887}"
+    ],
+    [
+      "_smps",
+      "eyJiZjJiMTRkNC0xYzBjLTRiM2MtODRkYS0zOTZhNWFlZmM0NmMiOnsidyI6MCwidiI6MCwibnMiOnRydWUsIm5zYSI6ZmFsc2UsImx2IjowfSwiN2E4YmM2OTktYTM3NC00NWU3LTljM2QtMDdlMzBlNTI1ODIyIjp7InciOjAsInYiOjAsIm5zIjp0cnVlLCJuc2EiOmZhbHNlLCJsdiI6MH0sImU4N2NkNDI4LTVjNTAtNGQwNi1iODZlLWVhM2I4Y2MxOTEyNCI6eyJ3IjowLCJ2IjowLCJucyI6dHJ1ZSwibnNhIjpmYWxzZSwibHYiOjB9LCJjODZhYzc4NS01YzI1LTQ0MmYtOThiOS1jMzE1NjllZTBmOTMiOnsidyI6MCwidiI6MCwibnMiOnRydWUsIm5zYSI6ZmFsc2UsImx2IjowfSwiN2Y5Y2Y1M2ItOThmMy00MTQyLTlhZmItY2RiYWIxNDE4MmVmIjp7InciOjAsInYiOjAsIm5zIjp0cnVlLCJuc2EiOmZhbHNlLCJsdiI6MH0sImJlZDcxM2NjLTJiMzQtNGE0OC1iNDZhLWE5NWNkMGU0M2JjNCI6eyJ3IjoxLCJ2IjoxLCJucyI6dHJ1ZSwibnNhIjpmYWxzZSwibHYiOjF9LCJmMjI3NTBiYy04ZWQyLTQwYzEtYjU3Zi04NWU3NjgwYjUzMmIiOnsidyI6MCwidiI6MCwibnMiOnRydWUsIm5zYSI6ZmFsc2UsImx2IjowfSwiYjRmZTY2ZGUtZmFkZC00ZjY5LWIzMzEtNWY0NzBkODQyMTZmIjp7InciOjAsInYiOjAsIm5zIjp0cnVlLCJuc2EiOmZhbHNlLCJsdiI6MH0sIjM5NTNlM2ZlLWY4ZTEtNDk0MS1hODU4LTQ1NmJkZGFkNjRmNSI6eyJ3IjowLCJ2IjowLCJucyI6dHJ1ZSwibnNhIjpmYWxzZSwibHYiOjB9fQ=="
+    ],
+    [
+      "_gcl_ls",
+      "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"creationTimeMs\":1773125173102},\"expires\":1780901173102}}"
+    ],
+    [
+      "__rtp",
+      "[]"
+    ],
+    [
+      "_smfp",
+      "NTI4YjQxMjcyNDQwMjIxYmFjNDkxMWQ1MzQ5MzRjM2I="
+    ],
+    [
+      "amplitude_unsent_identify_79435147d903c19809304720ff77c083",
+      "[]"
+    ],
+    [
+      "amplitude_unsent_79435147d903c19809304720ff77c083",
+      "[]"
+    ],
+    [
+      "collection_index",
+      "3-1773125424-armor.9f26fdf3adf1ae189080052840e2301835e7c2429e023743bcd61a29417ec2063facc641ba3a142f6ba67b26f1456f889a1380ea5c5cd4f373fd8367c7e3cceab426b59617b5806142b27c7236b8d91ed17ec5e745ccf15847a9e69d4d07f351.f5e47f9588ca15c0e4d713a306223d91"
+    ],
+    [
+      "RTFirstStep",
+      "false"
+    ],
+    [
+      "pa_enabled",
+      "1"
+    ],
+    [
+      "__rtAsync",
+      "{}"
+    ],
+    [
+      "__rtbh.uid",
+      "{\"eventType\":\"uid\",\"id\":\"unknown\",\"expiryDate\":\"2027-03-10T06:50:14.927Z\"}"
+    ],
+    [
+      "YUNO_EVENT_LOGS_booking.jetsmart.com",
+      "[{\"os\":\"Linux\",\"organization_name\":\"booking.jetsmart.com\",\"client_app_domain\":\"booking.jetsmart.com\",\"application_session\":\"mmk9387c00682bhbcjs4\",\"application_name\":\"sdk-web\",\"environment\":\"production\",\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"step_name\":\"Hide Loader\",\"step_function\":\"hideLoader\",\"step_location\":\"sdk/loader/hide-loader.ts\",\"customer_session\":null,\"checkout_session\":\"3425f08b-bff6-466b-afc4-5304f8302279\",\"original_created_at\":\"2026-03-10T06:50:26.754Z\",\"sdk_version\":\"9.15.10\",\"url\":\"https://booking.jetsmart.com/V2/Payment?sh=MDEyMzQ=\",\"metadata\":{\"payload\":{\"originExternal\":false},\"browser_info\":{\"ua\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"browser\":{\"name\":\"Chrome\",\"version\":\"145.0.0.0\",\"major\":\"145\"},\"engine\":{\"name\":\"Blink\",\"version\":\"145.0.0.0\"},\"os\":{\"name\":\"Linux\"},\"device\":{},\"cpu\":{\"architecture\":\"amd64\"}},\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"language\":\"es\",\"country\":\"CO\"},\"device_id\":\"mmk9387h00v9fubst4t2\",\"headers\":{\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"platform\":\"Web\",\"accept_language\":\"es\",\"x-version\":\"9.15.10\",\"workflow\":\"SDK_CHECKOUT\"},\"level\":\"DEBUG\",\"type\":\"LOG\"},{\"os\":\"Linux\",\"organization_name\":\"booking.jetsmart.com\",\"client_app_domain\":\"booking.jetsmart.com\",\"application_session\":\"mmk9387c00682bhbcjs4\",\"application_name\":\"sdk-web\",\"environment\":\"production\",\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"step_name\":\"unmount SDK\",\"step_function\":\"unmount\",\"step_location\":\"sdk/render-manager/unmount.ts\",\"customer_session\":null,\"checkout_session\":\"3425f08b-bff6-466b-afc4-5304f8302279\",\"original_created_at\":\"2026-03-10T06:50:26.755Z\",\"sdk_version\":\"9.15.10\",\"url\":\"https://booking.jetsmart.com/V2/Payment?sh=MDEyMzQ=\",\"metadata\":{\"browser_info\":{\"ua\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"browser\":{\"name\":\"Chrome\",\"version\":\"145.0.0.0\",\"major\":\"145\"},\"engine\":{\"name\":\"Blink\",\"version\":\"145.0.0.0\"},\"os\":{\"name\":\"Linux\"},\"device\":{},\"cpu\":{\"architecture\":\"amd64\"}},\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"language\":\"es\",\"country\":\"CO\"},\"device_id\":\"mmk9387h00v9fubst4t2\",\"headers\":{\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"platform\":\"Web\",\"accept_language\":\"es\",\"x-version\":\"9.15.10\",\"workflow\":\"SDK_CHECKOUT\"},\"level\":\"DEBUG\",\"type\":\"LOG\"},{\"os\":\"Linux\",\"organization_name\":\"booking.jetsmart.com\",\"client_app_domain\":\"booking.jetsmart.com\",\"application_session\":\"mmk9387c00682bhbcjs4\",\"application_name\":\"sdk-web\",\"environment\":\"production\",\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"step_name\":\"get card IIN\",\"step_function\":\"getCardIIN\",\"step_location\":\"api/public-sdk/public-sdk.ts\",\"customer_session\":null,\"checkout_session\":\"3425f08b-bff6-466b-afc4-5304f8302279\",\"original_created_at\":\"2026-03-10T06:50:47.984Z\",\"sdk_version\":\"9.15.10\",\"url\":\"https://api.y.uno/v1/card-iins\",\"method\":\"get\",\"request\":{\"params\":{\"iin\":\"530691000\"}},\"response\":{\"id\":\"ab08461b-8089-4da5-add9-7823b5916d71\",\"iin\":\"530691\",\"scheme\":\"MASTERCARD\",\"issuer_name\":\"BANCOLOMBIA\",\"issuer_code\":null,\"brand\":\"MASTERCARD\",\"type\":\"DEBIT\",\"category\":\"DEBIT STANDARD\",\"country_code\":\"CO\",\"country_name\":\"Colombia\",\"website\":null,\"phone\":{\"country_code\":null,\"number\":null},\"address\":{\"address_line_1\":null,\"address_line_2\":null,\"city\":null,\"country\":null,\"state\":null,\"zip_code\":null},\"feature_flags\":{\"cartes_bancaires\":false,\"validate_fields\":{\"expiration_date\":true,\"security_code\":true,\"card_number_luhn\":true}}},\"country\":null,\"headers\":{\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"platform\":\"Web\",\"accept_language\":\"es\",\"x-version\":\"9.15.10\",\"workflow\":\"SDK_CHECKOUT\",\"Accept\":\"application/json, text/plain, */*\"},\"status_code\":\"200\",\"trace_id\":\"0435e227-2f67-45ca-aac0-998b3b2903ca\",\"device_id\":\"mmk9387h00v9fubst4t2\",\"metadata\":{\"browser_info\":{\"ua\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"browser\":{\"name\":\"Chrome\",\"version\":\"145.0.0.0\",\"major\":\"145\"},\"engine\":{\"name\":\"Blink\",\"version\":\"145.0.0.0\"},\"os\":{\"name\":\"Linux\"},\"device\":{},\"cpu\":{\"architecture\":\"amd64\"}},\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"language\":\"es\",\"country\":\"CO\"},\"level\":\"INFO\",\"type\":\"LOG\"},{\"os\":\"Linux\",\"organization_name\":\"booking.jetsmart.com\",\"client_app_domain\":\"booking.jetsmart.com\",\"application_session\":\"mmk9387c00682bhbcjs4\",\"application_name\":\"sdk-web\",\"environment\":\"production\",\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"step_name\":\"SecureFields\",\"step_function\":\"getElement\",\"step_location\":\"modules/secure-fields-v2/secure-fields.tsx\",\"customer_session\":null,\"checkout_session\":\"3425f08b-bff6-466b-afc4-5304f8302279\",\"original_created_at\":\"2026-03-10T06:50:51.319Z\",\"sdk_version\":\"9.15.10\",\"url\":\"https://booking.jetsmart.com/V2/Payment?sh=MDEyMzQ=\",\"metadata\":{\"payload\":{\"name\":\"cardLoadPreview\"},\"browser_info\":{\"ua\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"browser\":{\"name\":\"Chrome\",\"version\":\"145.0.0.0\",\"major\":\"145\"},\"engine\":{\"name\":\"Blink\",\"version\":\"145.0.0.0\"},\"os\":{\"name\":\"Linux\"},\"device\":{},\"cpu\":{\"architecture\":\"amd64\"}},\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"language\":\"es\",\"country\":\"CO\"},\"device_id\":\"mmk9387h00v9fubst4t2\",\"headers\":{\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"platform\":\"Web\",\"accept_language\":\"es\",\"x-version\":\"9.15.10\",\"workflow\":\"SDK_CHECKOUT\"},\"level\":\"DEBUG\",\"type\":\"LOG\"},{\"os\":\"Linux\",\"organization_name\":\"booking.jetsmart.com\",\"client_app_domain\":\"booking.jetsmart.com\",\"application_session\":\"mmk9387c00682bhbcjs4\",\"application_name\":\"sdk-web\",\"environment\":\"production\",\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"step_name\":\"SecureFields\",\"step_function\":\"getElement\",\"step_location\":\"modules/secure-fields-v2/secure-fields.tsx\",\"customer_session\":null,\"checkout_session\":\"3425f08b-bff6-466b-afc4-5304f8302279\",\"original_created_at\":\"2026-03-10T06:50:52.116Z\",\"sdk_version\":\"9.15.10\",\"url\":\"https://booking.jetsmart.com/V2/Payment?sh=MDEyMzQ=\",\"metadata\":{\"payload\":{\"name\":\"cardLoadPreview\"},\"browser_info\":{\"ua\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"browser\":{\"name\":\"Chrome\",\"version\":\"145.0.0.0\",\"major\":\"145\"},\"engine\":{\"name\":\"Blink\",\"version\":\"145.0.0.0\"},\"os\":{\"name\":\"Linux\"},\"device\":{},\"cpu\":{\"architecture\":\"amd64\"}},\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"language\":\"es\",\"country\":\"CO\"},\"device_id\":\"mmk9387h00v9fubst4t2\",\"headers\":{\"user_agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\",\"platform\":\"Web\",\"accept_language\":\"es\",\"x-version\":\"9.15.10\",\"workflow\":\"SDK_CHECKOUT\"},\"level\":\"DEBUG\",\"type\":\"LOG\"}]"
+    ],
+    [
+      "YUNO_METRIC_LOGS_booking.jetsmart.com",
+      "[{\"checkout_session\":\"3425f08b-bff6-466b-afc4-5304f8302279\",\"customer_session\":null,\"device_id\":\"mmk9387h00v9fubst4t2\",\"dynamic_sdk\":false,\"environment\":\"production\",\"flow_trace_id\":\"\",\"metadata\":{\"country\":\"CO\",\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"language\":\"es\"},\"original_created_at\":\"2026-03-10T06:50:19.754Z\",\"original_created_at_ms\":1773125419754,\"sdk_version\":\"9.15.10\",\"type\":\"NETWORK\",\"payload\":{\"url\":\"https://sdk-web.y.uno/v1.5/main.js\",\"start_time_ms\":812.2999999970198,\"dns_time_ms\":0,\"connection_time_ms\":0,\"secure_connection_time_ms\":null,\"ttfb_ms\":0,\"total_time_ms\":73.80000000447035,\"download_time_ms\":886.1000000014901,\"transfer_size_bytes\":null,\"render_blocking_status\":\"non-blocking\"}},{\"checkout_session\":\"3425f08b-bff6-466b-afc4-5304f8302279\",\"customer_session\":null,\"device_id\":\"mmk9387h00v9fubst4t2\",\"dynamic_sdk\":false,\"environment\":\"production\",\"flow_trace_id\":\"ae111836-8074-4463-be62-19e0481163bb\",\"metadata\":{\"country\":\"CO\",\"public_api_key\":\"prod_gAAAAABm9EQ1wxygPzjm5N6zssyC8KlQWESzEjmtBjhwkDPGL0jeJeEqbXIRXIzjslvXW729aG1DVL_fN6PtobsTgalqM05HZ1KU0xnVndeQz1Gc2ooQ-rYHqyzpC0UqFr4sMyuOEe2GfjOQkqGJ-7EBzFSxgQhLvv3UZ_5P_NlbhnUrC4l7NSK8EsWdtYn66YMxvh0hl4cP5CldFptTWDhq8RmV3NoOxxbdIfysc5MgLLhAYv2ftjmi29q3Bdv1cW-p6hdKbJ1s\",\"language\":\"es\"},\"original_created_at\":\"2026-03-10T06:50:19.761Z\",\"original_created_at_ms\":1773125419761,\"sdk_version\":\"9.15.10\",\"type\":\"TRACE\",\"payload\":{\"performance_step\":\"START_PAYMENT\",\"payment_method_type\":\"CARD\"}}]"
+    ],
+    [
+      "debug",
+      "*"
+    ],
+    [
+      "RTFlightAdded",
+      "true"
+    ]
+  ],
+  "sessionStorage": [
+    [
+      "jsCurrentStep",
+      "8"
+    ],
+    [
+      "jsHistory",
+      "1|6|3|4|5|2|8"
+    ],
+    [
+      "__rtbh.lid",
+      "{\"eventType\":\"lid\",\"id\":\"VYrjkTEGkvsAEAxuwxL7\",\"expiryDate\":\"2027-03-10T06:47:44.938Z\"}"
+    ],
+    [
+      "js-cached-booking-data",
+      "eyJBdmFpbGFibGVPdXRib3VuZEpvdXJuZXlzIjpudWxsLCJBdmFpbGFibGVSZXR1cm5Kb3VybmV5cyI6bnVsbCwiT3V0Ym91bmRKb3VybmV5Ijp7IkRlcGFydHVyZVN0YXRpb25Db2RlIjoiQk9HIiwiQXJyaXZhbFN0YXRpb25Db2RlIjoiTURFIiwiRGVwYXJ0dXJlRGF0ZSI6IjIwMjYtMDMtMjAgMDQ6MzU6MDAiLCJBcnJpdmFsRGF0ZSI6IjIwMjYtMDMtMjAgMDU6NDI6MDAiLCJGbGlnaHROdW1iZXIiOiJKQTUxMTAiLCJGYXJlQW1vdW50IjoxNDYyMDAsIkZhcmVBbW91bnRXaXRoVGF4ZXMiOjE5NzY3OCwiRmFyZUFtb3VudFVTRCI6MzguNTIsIkZhcmVBbW91bnRXaXRoVGF4ZXNVU0QiOjUyLjA4LCJGYXJlQ2xhc3MiOiJTIiwiRmFyZUN1cnJlbmN5Q29kZSI6IkNPUCIsIlNlcnZpY2VDaGFyZ2VzIjpbeyJBbW91bnQiOjE0NjIwMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IiIsIkNoYXJnZURldGFpbCI6IkJPRy1NREUifSx7IkFtb3VudCI6MjUwMDAsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJBRE1GIiwiQ2hhcmdlRGV0YWlsIjoiQk9HLU1ERSJ9LHsiQW1vdW50IjoyMzcwMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IkNPVCIsIkNoYXJnZURldGFpbCI6IkJPRy1NREUifSx7IkFtb3VudCI6Mjc3NzgsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJZUyIsIkNoYXJnZURldGFpbCI6IkJPRy1NREUifV0sIkludmVudG9yeVR5cGUiOiIzMjAiLCJJc0Nvbm5lY3RlZEZsaWdodCI6ZmFsc2UsIlNlZ21lbnRzIjpbeyJEZXBhcnR1cmVTdGF0aW9uQ29kZSI6IkJPRyIsIkFycml2YWxTdGF0aW9uQ29kZSI6Ik1ERSIsIkRlcGFydHVyZURhdGUiOiIyMDI2LTAzLTIwIDA0OjM1OjAwIiwiQXJyaXZhbERhdGUiOiIyMDI2LTAzLTIwIDA1OjQyOjAwIiwiRmxpZ2h0TnVtYmVyIjoiSkE1MTEwICIsIkZhcmVBbW91bnQiOjE0NjIwMCwiRmFyZUN1cnJlbmN5Q29kZSI6IkNPUCIsIlNlcnZpY2VDaGFyZ2VzIjpbeyJBbW91bnQiOjE0NjIwMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IiIsIkNoYXJnZURldGFpbCI6IiJ9LHsiQW1vdW50IjoyNTAwMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IkFETUYiLCJDaGFyZ2VEZXRhaWwiOiJCT0ctTURFIn0seyJBbW91bnQiOjIzNzAwLCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiQ09UIiwiQ2hhcmdlRGV0YWlsIjoiQk9HLU1ERSJ9LHsiQW1vdW50IjoyNzc3OCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IllTIiwiQ2hhcmdlRGV0YWlsIjoiQk9HLU1ERSJ9XSwiSW52ZW50b3J5VHlwZSI6IjMyMCJ9XSwiUHJvbW9Db2RlRGlzY291bnRQZXJjZW50IjpudWxsfSwiUmV0dXJuSm91cm5leSI6bnVsbCwiUE5SIjpudWxsLCJDb250YWN0Ijp7Ik5hbWUiOiIiLCJQaG9uZSI6IiIsIkVtYWlsIjoiIn0sIlBhc3NlbmdlcnMiOlt7Ik5hbWUiOiJhc2Rhc2QgYXNkYXNkZCIsIkRhdGVPZkJpcnRoIjoiMjAwNy0wNy0wNyAwMDowMDowMCIsIk51bWJlciI6MCwiRG9jTnVtYmVyIjoiMzIxMTIzIiwiRG9jVHlwZUNvZGUiOiJETkkiLCJGcmVxdWVudEZseWVyTnVtYmVyIjpudWxsLCJUeXBlIjoiQURUIiwiU2VydmljZUNoYXJnZXMiOlt7IkFtb3VudCI6MjUwMDAsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJBRE1GIiwiQ2hhcmdlRGV0YWlsIjoiQk9HLU1ERSJ9LHsiQW1vdW50IjoyMzcwMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IkNPVCIsIkNoYXJnZURldGFpbCI6IkJPRy1NREUifSx7IkFtb3VudCI6Mjc3NzgsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJZUyIsIkNoYXJnZURldGFpbCI6IkJPRy1NREUifV0sIkZhcmUiOjEyMTIwMCwiUGFzc2VuZ2VyVG90YWwiOjE5NzY3OCwiT3V0Ym91bmRKb3VybmV5U3NycyI6WyJBQ0FBIl0sIlJldHVybkpvdXJuZXlTc3JzIjpbXSwiQW5jaWxsYXJpZXMiOnsiT3V0Ym91bmQiOnsiU2VsZWN0ZWQiOlt7IlF1YW50aXR5IjoxLCJBbW91bnQiOjAsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJBQ0FBIiwiQ2hhcmdlRGV0YWlsIjoiQk9HLU1ERSJ9XSwiTm90U2VsZWN0ZWQiOlt7IlF1YW50aXR5IjozLCJBbW91bnQiOjg2MTYwLCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiU1BRRCIsIkNoYXJnZURldGFpbCI6IkVxdWlwYWplIHNvYnJlZGltZW5zaW9uYWRvIn0seyJRdWFudGl0eSI6MywiQW1vdW50IjoxNDUwMDAsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJTUFFBIiwiQ2hhcmdlRGV0YWlsIjoiRXF1aXBhamUgc29icmVkaW1lbnNpb25hZG8ifSx7IlF1YW50aXR5Ijo0LCJBbW91bnQiOjcxNDAwLCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiUFRDRCIsIkNoYXJnZURldGFpbCI6Ik1hc2NvdGEgYSBib3JkbyJ9LHsiUXVhbnRpdHkiOjAsIkFtb3VudCI6MjE0MjAsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJQQkQiLCJDaGFyZ2VEZXRhaWwiOiJFbWJhcnF1ZSBwcmlvcml0YXJpbyJ9LHsiUXVhbnRpdHkiOjEsIkFtb3VudCI6MTA1MzE1LCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiTEJHRCIsIkNoYXJnZURldGFpbCI6IkVxdWlwYWplIGRlIG1hbm8ifSx7IlF1YW50aXR5IjoxLCJBbW91bnQiOjg5NjA3LCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiTEJHQyIsIkNoYXJnZURldGFpbCI6IkVxdWlwYWplIGRlIE1hbm8ifSx7IlF1YW50aXR5IjowLCJBbW91bnQiOjIxNDIwLCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiRkxYQiIsIkNoYXJnZURldGFpbCI6IkZsZXhpU01BUlQifSx7IlF1YW50aXR5IjowLCJBbW91bnQiOjEzMDAwLCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiRkw0OCIsIkNoYXJnZURldGFpbCI6IlByZWNpbyBmaWpvIHBvciA0OCBob3JhcyJ9LHsiUXVhbnRpdHkiOjAsIkFtb3VudCI6ODYwMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IkZMMjQiLCJDaGFyZ2VEZXRhaWwiOiJQcmVjaW8gZmlqbyBwb3IgMjQgaG9yYXMifSx7IlF1YW50aXR5Ijo1LCJBbW91bnQiOjgyOTQzLCJDdXJyZW5jeUNvZGUiOiJDT1AiLCJDaGFyZ2VDb2RlIjoiQkFHRCIsIkNoYXJnZURldGFpbCI6IkVxdWlwYWplIGRlIGJvZGVnYSJ9LHsiUXVhbnRpdHkiOjUsIkFtb3VudCI6NzA1NjcsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJCQUdDIiwiQ2hhcmdlRGV0YWlsIjoiRXF1aXBhamUgZmFjdHVyYWRvIn0seyJRdWFudGl0eSI6MCwiQW1vdW50IjoyMTQyMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IkFQQ0QiLCJDaGFyZ2VEZXRhaWwiOiJPYnRlbmVyIG1pIHRhcmpldGEgZGUgZW1iYXJxdWUgZW4gYWVyb3B1ZXJ0byJ9LHsiUXVhbnRpdHkiOjEsIkFtb3VudCI6MCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IlNURiIsIkNoYXJnZURldGFpbCI6IlNlYXQifV19LCJSZXR1cm4iOm51bGx9LCJGbGlnaHRUYXhlcyI6eyJPdXRib3VuZCI6W3siQW1vdW50IjoyMzcwMCwiQ3VycmVuY3lDb2RlIjoiQ09QIiwiQ2hhcmdlQ29kZSI6IkNPVCIsIkNoYXJnZURldGFpbCI6IkJPRy1NREUifSx7IkFtb3VudCI6Mjc3NzgsIkN1cnJlbmN5Q29kZSI6IkNPUCIsIkNoYXJnZUNvZGUiOiJZUyIsIkNoYXJnZURldGFpbCI6IkJPRy1NREUifV0sIlJldHVybiI6bnVsbH19XSwiUGFzc2VuZ2Vyc0FkdWx0Q291bnQiOjEsIlBhc3NlbmdlcnNDaGlsZENvdW50IjowLCJQYXNzZW5nZXJzSW5mYW50Q291bnQiOjAsIlByb21vdGlvbkNvZGUiOiIiLCJSb3VuZHRyaXAiOmZhbHNlLCJUb3RhbFByaWNlTG9jYWwiOjE5NzY3OCwiVG90YWxQcmljZVVTRCI6NTIuMDgsIlRvdGFsVGF4TG9jYWwiOjUxNDc4LCJUb3RhbFRheFVTRCI6MTMuNTYsIlRvdGFsVHJhbnNhY3Rpb25UYXhMb2NhbCI6NTE0NzgsIlRvdGFsVHJhbnNhY3Rpb25UYXhVU0QiOjEzLjU2LCJUb3RhbEFuY2lsbGFyeUxvY2FsIjowLCJUb3RhbEFuY2lsbGFyeVVTRCI6MCwiVG90YWxUcmFuc2FjdGlvbkFtb3VudExvY2FsIjoxOTc2NzgsIlRvdGFsVHJhbnNhY3Rpb25BbW91bnRVU0QiOjUyLjA4LCJQb3N0Qm9va2luZyI6ZmFsc2UsIkN1bHR1cmUiOiJlcy1DTyIsIlRvdGFsUHJpY2VDdXJyZW5jeUxvY2FsIjoiQ09QIiwiUHJvbW90aW9uRGlzY291bnQiOm51bGwsIlByb21vdGlvbkRpc2NvdW50Q3VycmVuY3kiOm51bGwsIkJhZ2dhZ2VEaXNjb3VudCI6bnVsbCwiQmFnZ2FnZURpc2NvdW50Q3VycmVuY3kiOm51bGwsIkVtcGxveWVlRGlzY291bnQiOm51bGwsIkVtcGxveWVlRGlzY291bnRDdXJyZW5jeSI6bnVsbCwiRENEaXNjb3VudCI6bnVsbCwiRENEaXNjb3VudEN1cnJlbmN5IjpudWxsLCJQYXltZW50cyI6W10sIk91dGJvdW5kQnVuZGxlQ29kZSI6bnVsbCwiUmV0dXJuQnVuZGxlQ29kZSI6bnVsbCwiQWdlbnRQcm9ncmFtRGV0YWlscyI6bnVsbCwiUm9sZSI6IldXVyBBbm9ueW1vdXMiLCJDb21wYW55SWRlbnRpZmllciI6IiIsIkJvb2tpbmdDaGFubmVsVHlwZSI6IiIsIlN1Y2Nlc3NmdWxUcmFuc2FjdGlvbk1hZGUiOmZhbHNlLCJSb3V0ZU1hcmtldCI6IkRPTS1DTyIsIkNyZWF0ZWRCeSI6bnVsbH0="
+    ],
+    [
+      "__rtbh.uid",
+      "{\"eventType\":\"uid\",\"id\":\"unknown\",\"expiryDate\":\"2027-03-10T06:50:14.927Z\"}"
+    ]
+  ],
+  "cookies": [
+    {
+      "name": "_GRECAPTCHA",
+      "value": "09AKhCRwilS6iw31qP-X7-E03AsMYKRyFS9k6u6dgU_NnczaWa1Ux_cTDxbPLvZUNvbW1eTkVM6MQNjAKf8ty4KyM",
+      "domain": "www.google.com",
+      "path": "/recaptcha",
+      "expires": 1788677139.028799,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rtID",
+      "value": "++++NnKTS8v+0-ATcgmOvs___3",
+      "domain": ".retargeting.cl",
+      "path": "/pixel",
+      "expires": 1807685263.941371,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rtS",
+      "value": "++++NnKTS8v+0-ATggmOvs___3",
+      "domain": ".retargeting.cl",
+      "path": "/pixel",
+      "expires": 1773126463.941519,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": ".AspNetCore.Culture",
+      "value": "c%3Des-CO%7Cuic%3Des-CO",
+      "domain": "jetsmart.com",
+      "path": "/",
+      "expires": 1804661099.252159,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JS_ABTestDeviceId",
+      "value": "21c16ac1-a857-4a9d-81e8-99f38c52fe92",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1804661099.252495,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JS_IsGdpr",
+      "value": "False",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1774334699.25255,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JS_Country",
+      "value": "CO",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1774334699.252591,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ai_user",
+      "value": "Gfd1xA1DB/bZnk0+euoesB|2026-03-10T06:45:01.159Z",
+      "domain": "jetsmart.com",
+      "path": "/",
+      "expires": 1804661101.160216,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "Queue-it-jetsmart____________jat",
+      "value": "Cid=es-CL&f=0",
+      "domain": "jetsmart.queue-it.net",
+      "path": "/",
+      "expires": 1773211501.437964,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "Internal",
+      "value": "14",
+      "domain": "jetsmart.com",
+      "path": "/",
+      "expires": 1773211556.830733,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "last_click_utm",
+      "value": "%7B%22source%22%3A%22direct%22%2C%22medium%22%3A%22none%22%2C%22campaign%22%3Anull%2C%22term%22%3Anull%2C%22content%22%3Anull%2C%22timestamp%22%3A1773125101438%7D",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1775717101.441182,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ttp",
+      "value": "3Ak8F7b6nyab4zZC2l8OQBFiUzr",
+      "domain": ".tiktok.com",
+      "path": "/",
+      "expires": 1806821101.637456,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "QueueITAccepted-SDFrts345E-V3_jat",
+      "value": "EventId%3Djat%26QueueId%3D00000000-0000-0000-0000-000000000000%26RedirectType%3Ddisabled%26IssueTime%3D1773125101%26Hash%3D22098d1e762ca916c8890c2be985b2b73db9b8be7f522d07950fbfacb038cbc6",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773126301,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__rtbh.lid",
+      "value": "%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%228crhW9ysyR7onoclW8Ij%22%2C%22expiryDate%22%3A%222027-03-10T06%3A45%3A01.764Z%22%7D",
+      "domain": "jetsmart.com",
+      "path": "/",
+      "expires": 1804661101,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.2082409885.1773125102",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1807685265.061732,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "g",
+      "value": "ADlrJcsry0wipE66KfNl_1773125102135",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1804661102.136449,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "c",
+      "value": "ADlrJcsry0wipE66KfNl_kRRgtNL5fciGUpIBPKeV_1773125102135",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1804661102.136592,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "ts",
+      "value": "1773125102",
+      "domain": ".creativecdn.com",
+      "path": "/",
+      "expires": 1804661102.13663,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "_tt_enable_cookie",
+      "value": "1",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1806821102,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ttp",
+      "value": "01KKB7VTYZ5FFZSHG4T3T2N8S4_.tt.1",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1806821102,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__sn",
+      "value": "1",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1804661434,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main_ses_id",
+      "value": "1773125102691%3Bexp-session",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127234,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sm_utm-source_label",
+      "value": "undefined",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773128702,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "smvr",
+      "value": "eyJ2aXNpdHMiOjEsInZpZXdzIjoxLCJ0cyI6MTc3MzEyNTEwMzQ1NSwiaXNOZXdTZXNzaW9uIjp0cnVlfQ==",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1807685103.45714,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "smuuid",
+      "value": "19cd67def62-8107d290778c-45905af6-d4ebb26e-85553984-6b9542ccfeef",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1807685103.458832,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main_v_id",
+      "value": "019cd67df1e1000659f216af25a705065001b05d007e8",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1804661434,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__ss",
+      "value": "0%3Bexp-session",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127234,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cltre",
+      "value": "es-CO",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main_dc_visit",
+      "value": "1",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1804661434,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "TAPID",
+      "value": "jetsmart/main>019cd67df1e1000659f216af25a705065001b05d007e8|",
+      "domain": ".tealiumiq.com",
+      "path": "/",
+      "expires": 1804661434.28784,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "XANDR_PANID",
+      "value": "-cVZfORR2rgK-gVcTf6cx1vcKDGOKAVI_zmwpQfDWiXhB9-RQnt5LjC5R3nYdQZxTo1gAXkzbfCRBIrzDpE7ikwkfEWpxunZ3h0tSA2Elto.",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1780901104.48875,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "uuid2",
+      "value": "3865422654248863011",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1780901104.488931,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "utag_main_dc_region",
+      "value": "us-east-1%3Bexp-session",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127234,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "anj",
+      "value": "dTM7k!M4/rD>6NRF']wIg2In1vvpTm!]tbPl@/@8+nOv3U_h/rb9VDZ:#jbyYNoXqax)A.Yi:KVV@vj4ZO9c%<xLqE_+?pbU#yI>Na`(zvu+OA3If)y3KL9D3I?+POhT`H",
+      "domain": ".adnxs.com",
+      "path": "/",
+      "expires": 1780901104.488904,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUl5o2b0buSfSGZl5bSluY2HIuhK4S4RDuG4pvJje0C7LSyeSTGQa2KNXZZy5hA",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1807685104.842783,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "udmts",
+      "value": "1773125104.0",
+      "domain": ".udmserve.net",
+      "path": "/",
+      "expires": 1804661104.854953,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "dt",
+      "value": "E68F261F-1450-380A-8A03-FE9C348FE154",
+      "domain": ".udmserve.net",
+      "path": "/",
+      "expires": 1804661104.855089,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rtbh",
+      "value": "lfG7ZjXX6hABxYgBM1Y0xS6GrZiCSWdZ7H3I7uzEcy0",
+      "domain": ".udmserve.net",
+      "path": "/",
+      "expires": 1780901104.855124,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "opticksid",
+      "value": "c33543049dcf948c69afbdf08c7bdad25fe15c78",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773126904.92668,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1773125104931.423422863922517189",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1780901434,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_smvs",
+      "value": "RElSRUNU",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773211505,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ttcsid",
+      "value": "1773125102569::KmwdG3WAf-gvfH4GDQRB.1.1773125134928.0",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1806821134,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ttcsid_D1LU3DBC77UEIG70SB20",
+      "value": "1773125102568::iBvMFrU_TEcWeydII9jO.1.1773125134928.1",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1806821134,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ttcsid_D61N9VBC77U3UMFCUF70",
+      "value": "1773125102570::gj1h7717Z0lVIE36d152.1.1773125134928.1",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1806821134,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bkng",
+      "value": "11UmFuZG9tSVYkc2RlIyh9Yaa29%2F3xUOLbof7CEiNviT%2B%2BZ6Ug4xE4JgmYnwX6FHuRlMIt5vH6FRHlqg5VFIcN%2FTIq5VQwowh3Wr%2FNYGLIh3brS8LzxzVogRiEk2CSSzCJnKBgvTE1QSr7H7MMtly0hWkzoRrM3e8ReVnUuC3beQKzYAsgT1NBs6tW9oaNrP2GBQiGShd9p%2BM%3D",
+      "domain": ".booking.com",
+      "path": "/",
+      "expires": 1807685142.477273,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ai_session",
+      "value": "aIcnfFaVxGepQBRyFFP05/|1773125101555|1773125166782",
+      "domain": "jetsmart.com",
+      "path": "/",
+      "expires": 1773126966.782903,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__rtbh.uid",
+      "value": "%7B%22eventType%22%3A%22uid%22%2C%22id%22%3A%22unknown%22%2C%22expiryDate%22%3A%222027-03-10T06%3A46%3A10.393Z%22%7D",
+      "domain": "jetsmart.com",
+      "path": "/",
+      "expires": 1804661170,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "JS_PreviousSearch",
+      "value": "eyJkZXBhcnR1cmVEYXRlIjoiMjAyNi0wMy0yMCIsImRlc3RpbmF0aW9uIjoiTURFIiwiaXNPbmVXYXkiOnRydWUsIm9yaWdpbiI6IkJPRyIsInBhc3NlbmdlcnMiOnsiYWR1bHRzIjoxLCJjaGlsZHJlbiI6MCwiaW5mYW50cyI6MCwidGVlbnMiOjB9LCJyZXR1cm5EYXRlIjoiIiwibGFzdFZpc2l0IjoiMjAyNi0wMy0xMCJ9",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1774334770,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "audit_p",
+      "value": "1|/T1mHdOs9fkDI1CvyDUbUv/Kel1A+QiQcWeFGQWnofgb0++6jsDTVwSjt7Y94kQ/nqz6phi93JQwHTRO1/p4iBTo3mxXlBe5Pf6vThgmMfqzV8ZmjaOoZAgcAt0mTFY3KEG2aDNYv343JFCt4Dnst1ZV+r9WiFV79eYKahRARSX1iEmmqz7PXoTvt+0f5jd0ffBkMEcWHCfQD5U7tEfUTQ==",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1804661170.724984,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "khaos",
+      "value": "MMK8Y1WN-1Q-9IYD",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1804661170.725149,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "khaos_p",
+      "value": "MMK8Y1WN-1Q-9IYD",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1804661170.725189,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "audit",
+      "value": "1|/T1mHdOs9fkDI1CvyDUbUv/Kel1A+QiQcWeFGQWnofgb0++6jsDTVwSjt7Y94kQ/nqz6phi93JQwHTRO1/p4iBTo3mxXlBe5Pf6vThgmMfqzV8ZmjaOoZAgcAt0mTFY3KEG2aDNYv343JFCt4Dnst1ZV+r9WiFV79eYKahRARSX1iEmmqz7PXoTvt+0f5jd0ffBkMEcWHCfQD5U7tEfUTQ==",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1804661170.725221,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "receive-cookie-deprecation",
+      "value": "1",
+      "domain": ".rubiconproject.com",
+      "path": "/",
+      "expires": 1780901170.725254,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "tt_viewer",
+      "value": "437d002a-5a7a-474d-a1fe-f974dcce68d2",
+      "domain": ".teads.tv",
+      "path": "/",
+      "expires": 1804574770.736093,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "Internal",
+      "value": "14",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1773211813.985474,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "dotrez",
+      "value": "!UU7UI5BMTAA3fLekr9e1U4qO53h+lyqw1m88iW4I3WB286bNJesdnv+EJSZ83mUnvaFXlp42ikNu7CE=",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_fs_ch_cp_79UUvfpJ5mWYtLQv",
+      "value": "AZUfWd41p10yAd8xOAynim1ybn1PBa2oz3sA647_TPDsA09CrpRTvZBZoEXqMgmF52Ut4KcMiWcfZNMEnYLlZnsG7magTG_l_Gb5MT_Vb7V0xTnD0CUL3zYcBGFRU4iRLjCC1KNw-0NOC4iN6JjzBZky6HuHcEst43btWLnBhSMv8AMdvRZ76xEnt5QLxR511L3VVEYkOCQEQIHGRidUATqC0PCciOMLhQFVpbzkUb3sn4JqsxcrZ5rX-awu_CKTZemT2ROT49ikFfnF",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1773128771.653484,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ASP.NET_SessionId",
+      "value": "zc1efkzweu3pjiro2hu2bkt5",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__RequestVerificationToken",
+      "value": "XVM1Jq-5tGa7YtZgeqkseSxFvkiweQtLpAL1wVPfGjAbQTB0qlV5ufvEW0A652ya9nnFDH7mCe6HTkDTM_ZR24Z4xHSNkSkHJ6TkJuaoaW4JquCLqrEtgiX2OVGPJ_ZP-NamaQ2",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "EA0D9EB48A335E9C981434389D0AA1AF~000000000000000000000000000000~YAAQbqE2tZKRqaKcAQAAP/5+1h/D9pqtMWIFRTcoUEtQsRlOS1GtDlUiCyGo2mCGmKcbCAxSjXN3TsfyBvxp7AImlhyn6KhcdpeUP/9i7JV8vUnquSBrB5WNmNGtF2anM1pt/JDI63KZqUkFqnVYkP2RuV2e0uRc/Nm71hErtVv6Jw+pqs3kpK1KnO2veik1PYDvo8gQl2YysH9IY6s6zLYBHGwWyXuSkYTC7zcCz+e1YYVrci89JlN8c3+m1/PcFf2mi2FR20sUWiDQpdn5kcjjbU4F9z49xKykaq0p2AxQKU5dlMaCFqZpNYBlj0ZAbNK2iQc45jeqq+Yjnk7dr7PbUwIcliz4BB6fHf9rcNIN6f3OiYymkZsZ5Mmjx6C7TjJ6iau60pK7zjIJjw==",
+      "domain": ".compraqui.cl",
+      "path": "/",
+      "expires": 1773132372.777626,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_d2id",
+      "value": "52f3414e-148d-439b-a05b-c2f7f2125027-n",
+      "domain": ".mercadopago.com",
+      "path": "/",
+      "expires": 1804661173.196741,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_d2id",
+      "value": "9c98d216-91a1-441a-83f3-11044824d0fa-n",
+      "domain": ".mercadolibre.com",
+      "path": "/",
+      "expires": 1804661173.828024,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_csrf",
+      "value": "yVQZUZKxLBhy5It5zO8a-Dui",
+      "domain": "www.mercadolibre.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "dsid",
+      "value": "ac7a31ae-fd02-41ce-a050-6b6c848d0b7b-1773125173814",
+      "domain": ".mercadolibre.com",
+      "path": "/",
+      "expires": 1807685422.449436,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "edsid",
+      "value": "1bfc1ac7-714c-40e9-a2f1-ba7b96a4e891-1773125173814",
+      "domain": ".mercadolibre.com",
+      "path": "/",
+      "expires": 1807685422.449651,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__sessionId_cookie",
+      "value": "21c16ac1-a857-4a9d-81e8-99f38c52fe92",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1773211821,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": false
+    },
+    {
+      "name": "_d2id",
+      "value": "f889eef2-aea6-4ceb-ad57-ad266adb26e9-n",
+      "domain": ".mercadolivre.com",
+      "path": "/",
+      "expires": 1804661174.271348,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_csrf",
+      "value": "9pxE9Lgl-QRNlrhilG6F9-6f",
+      "domain": "www.mercadolivre.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "p_dsid",
+      "value": "8aec53d9-8585-4f12-befc-b12437d31f5b-1773125174258",
+      "domain": "www.mercadolivre.com",
+      "path": "/",
+      "expires": 1807685422.673141,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "p_edsid",
+      "value": "34e26533-61b8-4811-ab78-44b5b0f96de1-1773125174258",
+      "domain": "www.mercadolivre.com",
+      "path": "/",
+      "expires": 1807685422.673298,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "thx_guid",
+      "value": "ce8a2eae7c49729eff4ca1fda11625bf",
+      "domain": "h.online-metrix.net",
+      "path": "/",
+      "expires": 1807685174.291466,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "smuuid",
+      "value": "19cd67def62-8107d290778c-45905af6-d4ebb26e-85553984-6b9542ccfeef",
+      "domain": ".booking.jetsmart.com",
+      "path": "/",
+      "expires": 1807685265.650543,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__deviceId_cookie",
+      "value": "836864e8ca5d29d1c6d3603ae1ed9ee4",
+      "domain": "antifraud.koinlatam.com",
+      "path": "/",
+      "expires": 1804661174,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://jetsmart.com",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "_hjSessionUser_1606173",
+      "value": "eyJpZCI6Ijk3MTU0MGQwLWZhYjktNWRmOS05NWJhLTNiNDYxNDQ5NDhhMSIsImNyZWF0ZWQiOjE3NzMxMjUxNzQ0NzksImV4aXN0aW5nIjp0cnVlfQ==",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1804661264,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_hjSession_1606173",
+      "value": "eyJpZCI6IjgyMmM4MDcxLTZjYTQtNGRlYi1hMjU0LTJlZmM5NjI1MTRiZSIsImMiOjE3NzMxMjUxNzQ0ODIsInMiOjEsInIiOjEsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MX0=",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127246,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "thx_global_guid",
+      "value": "4e7f1bd5574646f5a8f2e3aeca12d6fd",
+      "domain": "h.online-metrix.net",
+      "path": "/",
+      "expires": 1807685174.990936,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "BID",
+      "value": "RGKKQXIDL3FGID3174BFCYSBY",
+      "domain": ".toast.com",
+      "path": "/",
+      "expires": 1788677175.282794,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "txpub_1570163526",
+      "value": "lfG7ZjXX6hABxYgBM1Y0xS6GrZiCSWdZ7H3I7uzEcy0_:_EXP_:_1788677175_:_EXP_:_1773125175",
+      "domain": ".toast.com",
+      "path": "/",
+      "expires": 1788677175.28293,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "txsync",
+      "value": "1773125175",
+      "domain": ".toast.com",
+      "path": "/",
+      "expires": 1788677175.282969,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "opticksid",
+      "value": "c33543049dcf948c69afbdf08c7bdad25fe15c78",
+      "domain": ".booking.jetsmart.com",
+      "path": "/",
+      "expires": 1773127065.201146,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "BID",
+      "value": "RGKKQXIDL3FGID3174BFCYSBY",
+      "domain": ".nhnace.com",
+      "path": "/",
+      "expires": 1788677176.033051,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "txpub_1570163526",
+      "value": "lfG7ZjXX6hABxYgBM1Y0xS6GrZiCSWdZ7H3I7uzEcy0_:_EXP_:_1788677175_:_EXP_:_1773125175",
+      "domain": ".nhnace.com",
+      "path": "/",
+      "expires": 1788677176.033192,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "txsync",
+      "value": "1773125175",
+      "domain": ".nhnace.com",
+      "path": "/",
+      "expires": 1788677176.03323,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "toggleTaxesCookie",
+      "value": "true",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1775717178,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "JS_PC_FS",
+      "value": "",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773125482,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "emcid",
+      "value": "F-oJqVQHMsF",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1807685188.822245,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cart_cookie",
+      "value": "%5B%7B%22origen%22%3A%22Bogot%C3%A1%22%2C%22destino%22%3A%22Medellin%22%2C%22fechaIda%22%3A%22Vie%2020-03%22%2C%22fechaVuelta%22%3Anull%2C%22pasajeros%22%3A%221%20pasajero%22%2C%22origen_iata%22%3A%22BOG%22%2C%22destino_iata%22%3A%22MDE%22%2C%22fechaIdaISO%22%3A%222026-03-20%22%2C%22fechaVueltaISO%22%3Anull%2C%22culture%22%3A%22es-CO%22%2C%22timestamp%22%3A%222026-03-10T06%3A46%3A33.310Z%22%2C%22id%22%3A%221773125193310zb3yy5tbb%22%7D%5D",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773729993,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__rtbh.lid",
+      "value": "%7B%22eventType%22%3A%22lid%22%2C%22id%22%3A%22VYrjkTEGkvsAEAxuwxL7%22%2C%22expiryDate%22%3A%222027-03-10T06%3A47%3A44.938Z%22%7D",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1804661264,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "utag_main__pn",
+      "value": "3%3Bexp-session",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127234,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "smvr",
+      "value": "eyJ2aXNpdHMiOjEsInZpZXdzIjoyLCJ0cyI6MTc3MzEyNTI2NTY0OCwiaXNOZXdTZXNzaW9uIjpmYWxzZX0=",
+      "domain": ".booking.jetsmart.com",
+      "path": "/",
+      "expires": 1807685265.648897,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "browserTabId:i5l8tSt6iw:203b6fbb-963e-41c6-b344-ea1ca2d7b3d3",
+      "value": "i5l8tSt6iw:203b6fbb-963e-41c6-b344-ea1ca2d7b3d3",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1773125463,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "gid",
+      "value": "4abdafd9b34cc0db819a410a1f3471a9",
+      "domain": ".gssprt.jp",
+      "path": "/",
+      "expires": 1807685265.972324,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "rtbhouse",
+      "value": "lfG7ZjXX6hABxYgBM1Y0xS6GrZiCSWdZ7H3I7uzEcy0",
+      "domain": ".gssprt.jp",
+      "path": "/",
+      "expires": 1788677265.972524,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "js_freeseats",
+      "value": "i5l8tSt6iw||0",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "js_discseats",
+      "value": "i5l8tSt6iw||0",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_0DW5DN2YRG",
+      "value": "GS2.1.s1773125103$o1$g1$t1773125409$j33$l0$h0",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1807685409.333977,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_19EJV67ERT",
+      "value": "GS2.1.s1773125103$o1$g1$t1773125409$j33$l0$h0",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1807685409.339037,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_VTHZC5DS1G",
+      "value": "GS2.1.s1773125101$o1$g1$t1773125409$j33$l0$h0",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1807685409.344018,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1017437005.1773125101.1749635787.1773125409.1773125409",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1780901101,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "yuno",
+      "value": "mmk9387h00v9fubst4t2",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1804661412,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__rtbh.uid",
+      "value": "%7B%22eventType%22%3A%22uid%22%2C%22id%22%3A%22unknown%22%2C%22expiryDate%22%3A%222027-03-10T06%3A50%3A14.927Z%22%7D",
+      "domain": "booking.jetsmart.com",
+      "path": "/",
+      "expires": 1804661414,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "TR",
+      "value": "b65c95752bbd37b88f4630a123358604b3a735bf65875f02",
+      "domain": ".send.microad.jp",
+      "path": "/",
+      "expires": 1780901415.703238,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "SOC",
+      "value": "aa.-J8Co8HAAAHX-4DQAAAAA",
+      "domain": ".socdm.com",
+      "path": "/",
+      "expires": 1807685415.777965,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tmx_guid",
+      "value": "AAzG9dYp7nHST9Yy8P9KOhANix9DicDghH9GbVO8hgv2H5QaXrWlOlmSTGCTnrPtmXd-FDoDH8O6hTAvkJRxPgevjjdEnQ",
+      "domain": "h.online-metrix.net",
+      "path": "/",
+      "expires": 1807685421.336775,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "utag_main__se",
+      "value": "78%3Bexp-session",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127234,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main__st",
+      "value": "1773127234212%3Bexp-session",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127234,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "amplitude_id_79435147d903c19809304720ff77c083jetsmart.com",
+      "value": "eyJkZXZpY2VJZCI6IjIxYzE2YWMxLWE4NTctNGE5ZC04MWU4LTk5ZjM4YzUyZmU5MiIsInVzZXJJZCI6IjAxOWNkNjdkZjFlMTAwMDY1OWYyMTZhZjI1YTcwNTA2NTAwMWIwNWQwMDdlOCIsIm9wdE91dCI6ZmFsc2UsInNlc3Npb25JZCI6MTc3MzEyNTEwNDQ0MCwibGFzdEV2ZW50VGltZSI6MTc3MzEyNTQzNDIxOSwiZXZlbnRJZCI6NTcsImlkZW50aWZ5SWQiOjAsInNlcXVlbmNlTnVtYmVyIjo1N30=",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1807685434.220119,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "utag_main_dc_event",
+      "value": "65%3Bexp-session",
+      "domain": ".jetsmart.com",
+      "path": "/",
+      "expires": 1773127234,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ]
+}

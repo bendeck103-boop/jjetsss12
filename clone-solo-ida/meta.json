@@ -1,0 +1,129 @@
+{
+  "recordingTime": "2026-03-10T06:51:03.873Z",
+  "recordedFlight": {
+    "origin": "BOG",
+    "destination": "MDE",
+    "departureDate": "2026-03-20",
+    "returnDate": null,
+    "adults": "1",
+    "children": "0",
+    "infants": "0"
+  },
+  "flowSteps": [
+    {
+      "url": "https://jetsmart.com/co/es/",
+      "label": "homepage",
+      "timestamp": 1773125099273
+    },
+    {
+      "url": "https://booking.jetsmart.com/Flight/InternalSelect?o1=BOG&d1=MDE&dd1=2026-03-20&ADT=1&CHD=0&inl=0&r=false&s=true&mon=true&cur=COP&culture=es-CO&pc=&rc=CO&selectedPriceOutbound=146200&selectedPriceInbound=&isRedemptionFlow=false&qitq=00000000-0000-0000-0000-000000000000&qitp=77797939-9d9c-4575-b9ae-69953199fc29&qitts=1773125170&qitc=jetsmart&qite=jetsmart&qitrt=Disabled&qith=2ca470e0e613f75a664e893e2aabc808",
+      "label": "flight-search",
+      "timestamp": 1773125171184
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO",
+      "label": "flight-results",
+      "timestamp": 1773125172501
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&open1=5110&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773125210948
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND0&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773125220838
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND1&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773125229113
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND2&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773125235257
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773125239262
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773125240747
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&open1=5110&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773125245885
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND0&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773125248365
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage",
+      "label": "baggage",
+      "timestamp": 1773125262257
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage?sh=",
+      "label": "baggage",
+      "timestamp": 1773125264295
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage?sh=",
+      "label": "baggage",
+      "timestamp": 1773125264313
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage?sh=MA==",
+      "label": "baggage",
+      "timestamp": 1773125264662
+    },
+    {
+      "url": "https://booking.jetsmart.com/Seat/Map?sh=MA",
+      "label": "other",
+      "timestamp": 1773125317068
+    },
+    {
+      "url": "https://booking.jetsmart.com/Seat/Map?sh=MDE=",
+      "label": "other",
+      "timestamp": 1773125317168
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Extras?sh=MDE",
+      "label": "extras",
+      "timestamp": 1773125344234
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Extras?sh=MDEy",
+      "label": "extras",
+      "timestamp": 1773125344354
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Passengers?sh=MDEy",
+      "label": "passengers",
+      "timestamp": 1773125380868
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Passengers?sh=MDEyMw==",
+      "label": "passengers",
+      "timestamp": 1773125381020
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Payment?sh=MDEyMw",
+      "label": "payment",
+      "timestamp": 1773125408006
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Payment?sh=MDEyMzQ=",
+      "label": "payment",
+      "timestamp": 1773125408222
+    }
+  ]
+}

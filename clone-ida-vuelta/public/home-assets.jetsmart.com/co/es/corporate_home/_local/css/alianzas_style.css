@@ -1,0 +1,126 @@
+.rt-widget {
+    #widgets_alianzas {
+        .alianzas-title {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            align-items: center;
+            padding: 12px 14px 12px 16px;
+            border-left: #00AEC7 4px solid;
+            font-family: 'Encode Sans', sans-serif;
+            font-weight: 600;
+
+            .icon-container {
+                display: flex;
+                font-size: 23px;
+                padding-right: 10px;
+
+                i {
+                    color: #00AEC7;
+                }
+            }
+
+            .text-container {
+                color: black;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0.05;
+                text-align: start;
+
+                @media (min-width: 768px) {
+                    font-size: 30px;
+                    font-weight: 550;
+                }
+            }
+
+            @media (min-width: 1280px) {
+                padding: 12px 14px 12px 32px;
+            }
+        }
+
+        .alianzas-content {
+            .card {
+                background-color: white;
+                max-width: 540px;
+                border-radius: 14px;
+                box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.10);
+
+                .card-img-container {
+                    width: 100%;
+                    height: auto;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: 14px 14px 0 0;
+                    }
+                }
+
+                .card-body {
+                    padding: 1rem;
+
+                    .card-title {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        text-align: center;
+                        color: #1B365D;
+                        margin-bottom: 2px;
+
+                        @media (min-width: 1280px) {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .card-text {
+                        color: #444444;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 18px;
+                        text-align: center;
+
+                        @media (min-width: 1280px) {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+
+                    .separator {
+                        width: 95%;
+                        height: 1px;
+                        margin: 12px 0;
+                        border-bottom: 1px #E0E0E0 solid;
+                        justify-self: center;
+                    }
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 14px;
+                        text-align: center;
+                        color: #00AEC7;
+                        gap: 8px;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+
+                        @media (min-width: 1280px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .card{
+                transition: all 0.25s ease;
+            }
+            .card:hover {
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

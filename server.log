@@ -1,0 +1,43 @@
+nohup: ignoring input
+Starting serve mode...
+Starting Telegram bot polling...
+
+🚀 Clone running → http://localhost:3000
+   Template: BOG → MDE | 2026-03-20 / 2026-03-21
+   Hosts: booking.jetsmart.com, home-assets.jetsmart.com, jetsmart.com, jetsmart.queue-it.net
+
+Telegram polling error: TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11360:11)
+    at async Timeout.pollTelegramUpdates [as _onTimeout] (/home/danger/Documents/web-cloner-jet/src/server.js:1039:25) {
+  cause: HeadersTimeoutError: Headers Timeout Error
+      at Timeout.onParserTimeout [as callback] (node:internal/deps/undici/undici:7940:32)
+      at Timeout.onTimeout [as _onTimeout] (node:internal/deps/undici/undici:6075:17)
+      at listOnTimeout (node:internal/timers:569:17)
+      at process.processTimers (node:internal/timers:512:7) {
+    code: 'UND_ERR_HEADERS_TIMEOUT'
+  }
+}
+Telegram polling error: TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11360:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Timeout.pollTelegramUpdates [as _onTimeout] (/home/danger/Documents/web-cloner-jet/src/server.js:1039:25) {
+  cause: Error: getaddrinfo EAI_AGAIN api.telegram.org
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'api.telegram.org'
+  }
+}
+Telegram polling error: TypeError: fetch failed
+    at Object.fetch (node:internal/deps/undici/undici:11360:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Timeout.pollTelegramUpdates [as _onTimeout] (/home/danger/Documents/web-cloner-jet/src/server.js:1039:25) {
+  cause: Error: getaddrinfo EAI_AGAIN api.telegram.org
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26) {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'api.telegram.org'
+  }
+}

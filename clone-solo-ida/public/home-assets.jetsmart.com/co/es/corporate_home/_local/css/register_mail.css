@@ -1,0 +1,241 @@
+.rt-widget {
+  .register-container {
+    align-items: center;
+    background: #1B365D;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 16px 24px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    /* max-width: 62rem; */
+
+    @media (max-width: 1023px) {
+      padding: 20px 16px;
+      margin: 0;
+      border-radius: 0;
+      flex-direction: column;
+    }
+  }
+
+  .icon-register {
+    height: 64px;
+    width: 64px;
+  
+    @media (max-width: 1023px) {
+      height: 45px;
+      width: 45px;
+    }
+  }
+
+  .main-info {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0 20px 0 0;
+
+    @media (max-width: 1023px) {
+      flex: none;
+      width: 100%;
+      margin: 0 auto 16px;
+      padding: 0;
+      justify-content: center;
+    }
+  }
+
+  .input-mail-register {
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #333333 !important;
+    height: 45px;
+
+    padding: 0 15px;
+    width: 100%;
+  
+    @media (max-width: 1023px) {
+      margin: 0px 10px 0 0 !important;
+    }
+
+    &::placeholder {
+      color: #cccccc;
+    }
+  }
+
+  .form-mail-register {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+    justify-content: space-between;
+
+    @media(max-width: 1023px) {
+      justify-content: center;
+    }
+  }
+
+  .register-mail-button {
+    align-items: center;
+    border-radius: 20px !important;
+    background: #00aec7;
+    border: 2px solid #00aec7;
+    color: #ffffff;
+    display: flex;
+    font-size: 14px !important;
+    height: 45px;
+    /* justify-content: center; */
+    margin: 0 0 0 30px !important;
+    padding: 0 15px;
+    position: relative;
+    width: fit-content;
+    transition: 0.25s ease;
+    cursor: pointer;
+
+    @media (max-width: 1023px) {
+      font-size: 12px !important;
+    }
+
+    i {
+      padding-left: 8px;
+    }
+
+    &:hover {
+      background: #b2292e !important;
+      border-color: #b2292e;
+      color: #FFFFFF !important;
+    }
+
+    &:disabled {
+      background: #00aec7;
+      color: #ffffff;
+    }
+  }
+
+  .block-register-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+  }
+
+  .main-text-register {
+    color: #ffffff !important;
+    font-size: 16px;
+    margin: 0 !important;
+    font-weight: 300;
+  }
+
+  .soport-main-text {
+    color: #ffffff !important;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 !important;
+    line-height: 26px;
+  }
+
+  .secondary-text-regster {
+    color: #ffffff !important;
+    font-size: 13px;
+    margin: 0 !important;
+    padding: 5px 0 0;
+    font-weight: 300;
+  }
+
+  .block-form-politics {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+  }
+
+  @media (max-width: 1023px) {
+    .block-form-politics {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+  .block-politics-text {
+    display: flex;
+  }
+
+  .text-politic {
+    box-sizing: border-box;
+    color: #ffffff !important;
+    font-size: 12px;
+    margin: 0 !important;
+    font-weight: 300;
+    width: 70%;
+    text-align: start;
+
+    @media (max-width: 1023px) {
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .text-politic-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    text-decoration: underline !important;
+  }
+
+  /* .close-regisiter-mail {
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+} */
+
+  .success-register-text {
+    display: none;
+    color: #ffffff !important;
+    font-size: 28px !important;
+    width: 70%;
+    text-align: center;
+
+    @media (max-width: 1023px) {
+      font-size: 22px !important;
+      width: 100%;
+      margin: 0;
+      padding: 20px 0 0;
+    }  
+  }
+
+  .invalid-email-message {
+    color: #AF272F !important;
+    font-size: 14px;
+    padding: 10px 0 0 6px;
+    margin: 0 !important;
+    font-style: italic;
+  }
+
+  .movil-none {
+    display: block;
+  }
+
+  .movil-none-flex {
+    display: flex;
+  }
+
+  .desktop-none {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .movil-none {
+      display: none !important;
+    }
+
+    .movil-none-flex {
+      display: none !important;
+    }
+
+    .desktop-none {
+      display: flex !important;
+    }
+  }
+}

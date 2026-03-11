@@ -1,0 +1,9 @@
+var _currency = {"name":"COP","var":"cop","decimals":0,"thousand_separator":".","decimal_separator":",","prefix":true,"prefix_text":"$","sufix":true,"sufix_text":"COP"};
+var _lang = "es";
+var _country = "co";
+var gfunc = "/co/es/minisitios/_gfunc/";
+var func = "/co/es/corporate_home/javascript/_func/";
+var relative_path = "/co/es/corporate_home/javascript/";
+window.lazySizesConfig = window.lazySizesConfig || {};
+lazySizesConfig.loadMode = 1;
+lazySizesConfig.init = false;

@@ -1,0 +1,139 @@
+{
+  "recordingTime": "2026-03-10T03:30:07.672Z",
+  "recordedFlight": {
+    "origin": "BOG",
+    "destination": "MDE",
+    "departureDate": "2026-03-20",
+    "returnDate": "2026-03-21",
+    "adults": "1",
+    "children": "0",
+    "infants": "0"
+  },
+  "flowSteps": [
+    {
+      "url": "https://jetsmart.com/co/es/",
+      "label": "homepage",
+      "timestamp": 1773112903226
+    },
+    {
+      "url": "https://booking.jetsmart.com/Flight/InternalSelect?o1=BOG&d1=MDE&dd1=2026-03-20&ADT=1&CHD=0&inl=0&r=true&s=true&mon=true&cur=COP&culture=es-CO&pc=&rc=CO&selectedPriceOutbound=146200&selectedPriceInbound=158400&isRedemptionFlow=false&dd2=2026-03-21&qitq=00000000-0000-0000-0000-000000000000&qitp=409955a9-939d-4550-a93e-2093ca9c512d&qitts=1773113013&qitc=jetsmart&qite=jetsmart&qitrt=Disabled&qith=f4dd4b800932fa32c25b4b0bd659a098",
+      "label": "flight-search",
+      "timestamp": 1773113013540
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO",
+      "label": "flight-results",
+      "timestamp": 1773113015148
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&open1=5110&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773113032018
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND0&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773113046246
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND1&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773113052971
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND2&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773113057326
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773113064179
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773113065233
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&open1=5110&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773113068415
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND0&flight1=5110",
+      "label": "flight-results",
+      "timestamp": 1773113073040
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&bundle1=BND0&flight1=5110&open2=5132&fee=smart",
+      "label": "flight-results",
+      "timestamp": 1773113086325
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Flight?Culture=es-CO&fee=smart&bundle1=BND0&flight1=5110&bundle2=BND0&flight2=5132",
+      "label": "flight-results",
+      "timestamp": 1773113091034
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage",
+      "label": "baggage",
+      "timestamp": 1773113107891
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage?sh=",
+      "label": "baggage",
+      "timestamp": 1773113110412
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage?sh=",
+      "label": "baggage",
+      "timestamp": 1773113110455
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Baggage?sh=MA==",
+      "label": "baggage",
+      "timestamp": 1773113110594
+    },
+    {
+      "url": "https://booking.jetsmart.com/Seat/Map?sh=MA",
+      "label": "other",
+      "timestamp": 1773113180624
+    },
+    {
+      "url": "https://booking.jetsmart.com/Seat/Map?sh=MDE=",
+      "label": "other",
+      "timestamp": 1773113180727
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Extras?sh=MDE",
+      "label": "extras",
+      "timestamp": 1773113220305
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Extras?sh=MDEy",
+      "label": "extras",
+      "timestamp": 1773113220435
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Passengers?sh=MDEy",
+      "label": "passengers",
+      "timestamp": 1773113282459
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Passengers?sh=MDEyMw==",
+      "label": "passengers",
+      "timestamp": 1773113282631
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Payment?sh=MDEyMw",
+      "label": "payment",
+      "timestamp": 1773113323310
+    },
+    {
+      "url": "https://booking.jetsmart.com/V2/Payment?sh=MDEyMzQ=",
+      "label": "payment",
+      "timestamp": 1773113323613
+    }
+  ]
+}

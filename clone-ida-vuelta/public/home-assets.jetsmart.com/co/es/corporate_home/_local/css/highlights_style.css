@@ -1,0 +1,48 @@
+.rt-widget {
+    .widget-highlight {
+        position: relative;
+        border-radius: 30px;
+        transition: all 0.25s ease;
+        &:hover {
+            border-radius: 30px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .widget-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 59%;
+            left: 4.5%;
+            font-size: 12px;
+            padding: 0.6em 1.1em;
+            line-height: 1;
+            border-radius: 50px;
+            transition: background-color 0.3s, color 0.3s;
+
+            &.mobile {
+                top: 55%;
+                left: 7%;
+                font-size: 4.5vw;
+            }
+
+            & i {
+                font-size: 0.8em;
+                align-self: center;
+            }
+
+            @media (min-width: 1024px) and (max-width: 1199.98px) {
+                font-size: 16.5px;
+            }
+            
+            @media (min-width: 1200px) and (max-width: 1399.98px) {
+                font-size: 21.5px;
+            }
+
+            @media (min-width: 1400px) {
+                font-size: 26px;
+            }
+        }
+    }
+}

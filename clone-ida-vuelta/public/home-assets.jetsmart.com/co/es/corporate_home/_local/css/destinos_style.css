@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+
+.rt-widget {
+
+    .rt-block {
+        display: block;
+    }
+
+    .rt-flex {
+        display: flex;
+    }
+
+    .rt-hidden {
+        display: none;
+    }
+
+    @media (min-width: 640px) {
+        .rt-sm-block {
+            display: block;
+        }
+
+        .rt-sm-flex {
+            display: flex;
+        }
+
+        .rt-sm-hidden {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .rt-md-block {
+            display: block;
+        }
+
+        .rt-md-flex {
+            display: flex;
+        }
+
+        .rt-md-hidden {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .rt-lg-block {
+            display: block;
+        }
+
+        .rt-lg-flex {
+            display: flex;
+        }
+
+        .rt-lg-hidden {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .rt-xl-block {
+            display: block;
+        }
+
+        .rt-xl-flex {
+            display: flex;
+        }
+
+        .rt-xl-hidden {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .rt-2xl-block {
+            display: block;
+        }
+
+        .rt-2xl-flex {
+            display: flex;
+        }
+
+        .rt-2xl-hidden {
+            display: none;
+        }
+    }
+
+    #destinos {
+        align-items: center;
+
+        .destinos-title {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            padding: 12px 14px 12px 16px;
+            border-left: #00AEC7 4px solid;
+
+            .icon-container {
+                display: flex;
+                align-items: center;
+                padding-right: 10px;
+
+                i {
+                    color: #00AEC7;
+                    font-size: 23px;
+                }
+            }
+
+            .text-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                font-size: 18px;
+            }
+
+            .ofertas-destinos {
+                font-size: 18px;
+                line-height: 1.05;
+                word-wrap: break-word;
+
+                span {
+                    font-weight: 400;
+
+                    strong {
+                        color: #00AEC7;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            i {
+                color: #00AEC7;
+            }
+        }
+
+        .destinos-toggle {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            padding: 1rem 0;
+
+            @media (min-width: 768px) {
+                padding-left: 1rem;
+            }
+
+            .toggle-container {
+                width: 38px;
+                height: 20px;
+                padding: 2px;
+                background: #A1A1A1;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                align-self: center;
+                transition: background-color 0.3s ease;
+                cursor: pointer;
+
+                .toggle-circle {
+                    width: 16px;
+                    height: 16px;
+                    background-color: white;
+                    border-radius: 9999px;
+                    transition: transform 0.3s ease;
+                }
+            }
+
+            .toggle-container.active {
+                background-color: #00AEC7;
+
+                .toggle-circle {
+                    transform: translateX(18px);
+                }
+            }
+        }
+
+        .destinos-tags {
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            /* Firefox */
+            scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+
+            .tag-scroll {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 8px;
+            }
+
+            .tag-btn {
+                width: max-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px;
+                overflow: hidden;
+                border-radius: 8px;
+                color: #1B365D;
+                background-color: white;
+                outline: 1px #f0f3f7 solid;
+                gap: 8px;
+                white-space: nowrap;
+                transition: all 5ms ease-in-out;
+                flex-shrink: 0;
+                flex-grow: 0;
+                cursor: pointer;
+
+                i {
+                    display: inline-flex;
+                    align-self: center;
+                    justify-self: center;
+                    width: 15px;
+                    height: 15px;
+                }
+
+                &.active {
+                    color: white;
+                    background-color: #00AEC7;
+                    outline-color: #00AEC7;
+                }
+
+                &:hover:not(.active) {
+                    color: #4A6489;
+                    background-color: #f0f3f7;
+                    outline-color: #f0f3f7;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                height: 6px;
+                /* Chrome, Safari, Opera */
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: rgba(0, 0, 0, 0.2);
+                border-radius: 4px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+        }
+
+        .carrusel-item .card:hover{
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carrusel-item .card{
+            transition: all 0.25s ease;
+        }
+    }
+
+    a#destinos-ver-todos {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: fit-content;
+        margin-top: 1rem;
+        gap: 8px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
