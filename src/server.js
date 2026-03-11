@@ -176,31 +176,36 @@ function serve(cloneDir, port) {
 
     // ── Bundle Cost Engine ──────────────────────────────────────────────
     const bundleDiffMap = {};
-    const fpMock = getActiveData().mocks.find(m => m.url && m.url.toLowerCase().includes('/flight/flightpagedata'));
-    if (fpMock && typeof fpMock.response.body === 'string') {
-        try {
-            const fpParsed = JSON.parse(fpMock.response.body);
-            const scrapeBundles = (journeys) => {
-                if (!journeys) return;
-                let flights = journeys.Flights || [];
-                if (journeys.DateFlights) {
-                    journeys.DateFlights.forEach(df => {
-                        if (df.Flights) flights = flights.concat(df.Flights);
-                    });
-                }
-                flights.forEach(f => {
-                    if (Array.isArray(f.NormalBundleOffers)) {
-                        f.NormalBundleOffers.forEach(o => {
-                            if (o.SellKey && o.BundleCode) {
-                                bundleDiffMap[o.SellKey + '|' + o.BundleCode] = o.UnFormattedPriceDifference || 0;
-                            }
+    const fpMocks = [cloneRoundTrip, cloneOneWay]
+        .map(c => c.mocks.find(m => m.url && m.url.toLowerCase().includes('/flight/flightpagedata')))
+        .filter(Boolean);
+
+    for (const fpMock of fpMocks) {
+        if (typeof fpMock.response.body === 'string') {
+            try {
+                const fpParsed = JSON.parse(fpMock.response.body);
+                const scrapeBundles = (journeys) => {
+                    if (!journeys) return;
+                    let flights = journeys.Flights || [];
+                    if (journeys.DateFlights) {
+                        journeys.DateFlights.forEach(df => {
+                            if (df.Flights) flights = flights.concat(df.Flights);
                         });
                     }
-                });
-            };
-            scrapeBundles(fpParsed.Outbound);
-            scrapeBundles(fpParsed.Inbound);
-        } catch (e) { }
+                    flights.forEach(f => {
+                        if (Array.isArray(f.NormalBundleOffers)) {
+                            f.NormalBundleOffers.forEach(o => {
+                                if (o.SellKey && o.BundleCode) {
+                                    bundleDiffMap[o.SellKey + '|' + o.BundleCode] = o.UnFormattedPriceDifference || 0;
+                                }
+                            });
+                        }
+                    });
+                };
+                scrapeBundles(fpParsed.Outbound);
+                scrapeBundles(fpParsed.Inbound);
+            } catch (e) { }
+        }
     }
 
     function getBundleDiff(sellKey, bundleCode) {
@@ -216,22 +221,24 @@ function serve(cloneDir, port) {
     // ── Helpers ────────────────────────────────────────────────────────────
     const LOCAL_BASE = process.env.PUBLIC_URL || `http://localhost:${port}`;
 
-    function getHosts() {
+    function getHosts(reqSession) {
         try {
-            return fs.readdirSync(getActiveData().publicDir)
-                .filter(f => fs.statSync(path.join(getActiveData().publicDir, f)).isDirectory());
+            const activeDir = getActiveData(reqSession).publicDir;
+            return fs.readdirSync(activeDir)
+                .filter(f => fs.statSync(path.join(activeDir, f)).isDirectory());
         } catch { return []; }
     }
 
-    function findStaticFile(reqPath) {
-        const hosts = getHosts();
+    function findStaticFile(reqPath, reqSession) {
+        const hosts = getHosts(reqSession);
         const candidates = [reqPath];
         if (reqPath.endsWith('/')) candidates.push(reqPath + 'index.html');
         if (reqPath === '/') candidates.push('/index.html');
 
+        const activeDir = getActiveData(reqSession).publicDir;
         for (const host of hosts) {
             for (const p of candidates) {
-                const fp = path.join(getActiveData().publicDir, host, p);
+                const fp = path.join(activeDir, host, p);
                 if (fs.existsSync(fp) && fs.statSync(fp).isFile()) return { filePath: fp, host };
             }
         }
@@ -239,8 +246,8 @@ function serve(cloneDir, port) {
     }
 
     /** Preferred host for SPA fallback based on URL path. */
-    function getPreferredHost(reqPath) {
-        const hosts = getHosts();
+    function getPreferredHost(reqPath, reqSession) {
+        const hosts = getHosts(reqSession);
         if (hosts.length === 0) return null;
         const bookingHost = hosts.find(h => h.includes('booking'));
         const mainHost = hosts.find(h => h.includes('jetsmart') && !h.includes('booking')) || hosts[0];
@@ -275,7 +282,8 @@ function serve(cloneDir, port) {
         if (Buffer.isBuffer(reqBody)) reqBody = reqBody.toString('utf8');
         const reqHash = hashBody(reqBody);
 
-        const result = findMock(getActiveData().mocks, targetUrl, req.method, reqHash);
+        const activeData = getActiveData(req.session);
+        const result = findMock(activeData.mocks, targetUrl, req.method, reqHash);
         if (!result) {
             console.log(`❌ Miss: [${req.method}] ${targetUrl.substring(0, 120)}`);
             return false;
@@ -325,12 +333,12 @@ function serve(cloneDir, port) {
         if (shouldShiftFareCache && mockRes.isJson && req.session.searchContext.recorded.departureDate) {
             body = shiftFareCacheDates(body, req.session.searchContext.recorded.departureDate);
             if (shouldTransformFlight) {
-                body = transformFlightResponse(body, req.session.searchContext.recorded, req.session.searchContext.current, getActiveData().stationLookup, { skipDates: true });
+                body = transformFlightResponse(body, req.session.searchContext.recorded, req.session.searchContext.current, activeData.stationLookup, { skipDates: true });
             }
             console.log(`📅 Fare-cache shifted + transformed`);
         } else if (shouldTransformFlight) {
             const rec = req.session.searchContext.recorded;
-            body = transformFlightResponse(body, rec, req.session.searchContext.current, getActiveData().stationLookup);
+            body = transformFlightResponse(body, rec, req.session.searchContext.current, activeData.stationLookup);
             console.log(`🔄 Transformed: ${rec.origin}→${rec.destination} ⇒ ${req.session.searchContext.current.origin}→${req.session.searchContext.current.destination}`);
         }
 
@@ -1547,11 +1555,12 @@ function serve(cloneDir, port) {
 
         // Try static file from recorded assets
         try {
+            const activeData = getActiveData(req.session);
             const parsed = new URL(targetUrl);
             let pathname = parsed.pathname;
             if (pathname === '/') pathname = '/index.html';
             if (pathname.endsWith('/')) pathname += 'index.html';
-            const fp = path.join(getActiveData().publicDir, parsed.hostname, pathname);
+            const fp = path.join(activeData.publicDir, parsed.hostname, pathname);
             if (fs.existsSync(fp) && fs.statSync(fp).isFile()) {
                 console.log(`📁 Proxy static: ${parsed.hostname}${pathname}`);
                 if (fp.endsWith('.html')) {
@@ -1559,7 +1568,7 @@ function serve(cloneDir, port) {
                     content = content.replace(/<meta[^>]*http-equiv=['"]?Content-Security-Policy['"]?[^>]*>/gi, '');
                     content = rewriteUrls(content, LOCAL_BASE);
                     res.setHeader('Content-Type', 'text/html');
-                    return res.send(injectHtml(content, getActiveData().state, LOCAL_BASE, req.session.searchContext, getActiveData().stationLookup, req.session.currentFlowStep));
+                    return res.send(injectHtml(content, activeData.state, LOCAL_BASE, req.session.searchContext, activeData.stationLookup, req.session.currentFlowStep));
                 }
                 return res.sendFile(fp);
             }
@@ -1608,17 +1617,17 @@ function serve(cloneDir, port) {
     // ── Google Fonts CSS ──────────────────────────────────────────────────
 
     app.get('/css', (req, res, next) => {
-        const fp = path.join(getActiveData().publicDir, 'fonts.googleapis.com', 'css');
+        const fp = path.join(getActiveData(req.session).publicDir, 'fonts.googleapis.com', 'css');
         if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(fs.readFileSync(fp, 'utf8'), LOCAL_BASE)); }
         next();
     });
     app.get('/css2', (req, res, next) => {
-        const fp = path.join(getActiveData().publicDir, 'fonts.googleapis.com', 'css2');
+        const fp = path.join(getActiveData(req.session).publicDir, 'fonts.googleapis.com', 'css2');
         if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(fs.readFileSync(fp, 'utf8'), LOCAL_BASE)); }
         next();
     });
     app.get('/icon', (req, res, next) => {
-        const fp = path.join(getActiveData().publicDir, 'fonts.googleapis.com', 'icon');
+        const fp = path.join(getActiveData(req.session).publicDir, 'fonts.googleapis.com', 'icon');
         if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(fs.readFileSync(fp, 'utf8'), LOCAL_BASE)); }
         next();
     });
@@ -1696,14 +1705,15 @@ function serve(cloneDir, port) {
         }
 
         // Set recorded cookies (filter out booking tab cookies at flight selection)
-        if (Array.isArray(getActiveData().state.cookies)) {
+        const activeData = getActiveData(req.session);
+        if (Array.isArray(activeData.state.cookies)) {
             const BOOKING_COOKIE_PATTERNS = ['browserTabId', 'js_freeseats', 'js_discseats'];
             const SEARCH_COOKIE_PATTERNS = ['JS_PreviousSearch', 'cart_cookie'];
             const isFlightStep = req.session.currentFlowStep === 'flight-results' || req.session.currentFlowStep === 'flight-search' || req.session.currentFlowStep === 'homepage';
             const isHomepage = req.session.currentFlowStep === 'homepage';
             let filteredCookies = isFlightStep
-                ? getActiveData().state.cookies.filter(c => !BOOKING_COOKIE_PATTERNS.some(p => c.name.includes(p)))
-                : getActiveData().state.cookies;
+                ? activeData.state.cookies.filter(c => !BOOKING_COOKIE_PATTERNS.some(p => c.name.includes(p)))
+                : activeData.state.cookies;
             // On the homepage, remove recorded search cookies so "Rearmar mi búsqueda"
             // doesn't always populate with the recorded BOG→MDE search
             if (isHomepage) {
@@ -1725,14 +1735,14 @@ function serve(cloneDir, port) {
 
         // Find the HTML file
         let content = null;
-        const found = findStaticFile(req.path);
+        const found = findStaticFile(req.path, req.session);
         if (found) {
             content = fs.readFileSync(found.filePath, 'utf8');
         } else {
             // SPA fallback
-            const host = getPreferredHost(req.path);
+            const host = getPreferredHost(req.path, req.session);
             if (host) {
-                const fp = path.join(getActiveData().publicDir, host, 'index.html');
+                const fp = path.join(activeData.publicDir, host, 'index.html');
                 if (fs.existsSync(fp)) content = fs.readFileSync(fp, 'utf8');
             }
         }
@@ -1741,7 +1751,7 @@ function serve(cloneDir, port) {
 
         content = rewriteUrls(content, LOCAL_BASE);
         res.setHeader('Content-Type', 'text/html');
-        return res.send(injectHtml(content, getActiveData().state, LOCAL_BASE, req.session.searchContext, getActiveData().stationLookup, req.session.currentFlowStep));
+        return res.send(injectHtml(content, activeData.state, LOCAL_BASE, req.session.searchContext, activeData.stationLookup, req.session.currentFlowStep));
     });
 
     // ── JS / CSS Serving ──────────────────────────────────────────────────
@@ -1751,7 +1761,7 @@ function serve(cloneDir, port) {
         const isCss = req.path.endsWith('.css');
         if (!isJs && !isCss) return next();
 
-        const found = findStaticFile(req.path);
+        const found = findStaticFile(req.path, req.session);
         if (!found) return next();
 
         let content = fs.readFileSync(found.filePath, 'utf8');
@@ -1763,7 +1773,7 @@ function serve(cloneDir, port) {
     // ── Static Files ──────────────────────────────────────────────────────
 
     app.use((req, res, next) => {
-        const found = findStaticFile(req.path);
+        const found = findStaticFile(req.path, req.session);
         if (found) return res.sendFile(found.filePath);
         next();
     });
@@ -1771,16 +1781,17 @@ function serve(cloneDir, port) {
     // ── SPA Catch-all ─────────────────────────────────────────────────────
 
     app.get(/^(.*)$/, (req, res) => {
-        const host = getPreferredHost(req.path);
+        const host = getPreferredHost(req.path, req.session);
         if (!host) return res.status(404).send('Clone not found.');
 
-        const fp = path.join(getActiveData().publicDir, host, 'index.html');
+        const activeData = getActiveData(req.session);
+        const fp = path.join(activeData.publicDir, host, 'index.html');
         if (!fs.existsSync(fp)) return res.status(404).send('Clone not found.');
 
         let content = fs.readFileSync(fp, 'utf8');
         content = rewriteUrls(content, LOCAL_BASE);
         res.setHeader('Content-Type', 'text/html');
-        return res.send(injectHtml(content, getActiveData().state, LOCAL_BASE, req.session.searchContext, getActiveData().stationLookup, req.session.currentFlowStep));
+        return res.send(injectHtml(content, activeData.state, LOCAL_BASE, req.session.searchContext, activeData.stationLookup, req.session.currentFlowStep));
     });
 
     // ── Error Handler ──────────────────────────────────────────────────────
@@ -1798,7 +1809,7 @@ function serve(cloneDir, port) {
 
 
         wss.on('connection', (ws, req) => {
-            const sessionMock = getActiveData().wsData.find(m => m.url.includes(req.url));
+            const sessionMock = getActiveData(null).wsData.find(m => m.url.includes(req.url));
             if (!sessionMock) { ws.close(); return; }
 
             const initial = sessionMock.interactions.find(i => !i.requestPayload);
