@@ -1518,7 +1518,8 @@ function serve(cloneDir, port) {
         const params = extractFlightParams(dest);
         if (params.origin && params.destination) {
             req.session.searchContext.current = params;
-            if (!req.session.searchContext.recorded.origin) req.session.searchContext.recorded = { ...params };
+            const activeData = !params.returnDate && cloneOneWay ? cloneOneWay : cloneRoundTrip;
+            req.session.searchContext.recorded = { ...activeData.recordedFlightParams };
         }
         return res.redirect(302, rewriteUrls(dest, LOCAL_BASE));
     });
@@ -1529,7 +1530,8 @@ function serve(cloneDir, port) {
         const params = extractFlightParams(`${LOCAL_BASE}${req.originalUrl}`);
         if (params.origin && params.destination) {
             req.session.searchContext.current = params;
-            if (!req.session.searchContext.recorded.origin) req.session.searchContext.recorded = { ...params };
+            const activeData = !params.returnDate && cloneOneWay ? cloneOneWay : cloneRoundTrip;
+            req.session.searchContext.recorded = { ...activeData.recordedFlightParams };
             console.log(`✈  InternalSelect: ${params.origin} → ${params.destination}`);
         }
         req.session.currentFlowStep = 'flight-results';
@@ -1640,7 +1642,8 @@ function serve(cloneDir, port) {
         const params = extractFlightParams(`${LOCAL_BASE}${req.originalUrl}`);
         if (params.origin && params.destination) {
             req.session.searchContext.current = params;
-            if (!req.session.searchContext.recorded.origin) req.session.searchContext.recorded = { ...params };
+            const activeData = !params.returnDate && cloneOneWay ? cloneOneWay : cloneRoundTrip;
+            req.session.searchContext.recorded = { ...activeData.recordedFlightParams };
         }
 
         // Track which flow step we're on
