@@ -105,7 +105,7 @@ function serve(cloneDir, port) {
 
     // ── Deterministic Price Engine ────────────────────────────────────────
     function getDynamicFare(sellKey, isClub = false, isoDateOverride = null) {
-        if (!sellKey || sellKey === 'None' || String(sellKey).trim() === '') return 0;
+        if (!sellKey || sellKey === 'None' || sellKey === 'undefined' || sellKey === 'null' || String(sellKey).trim() === '') return 0;
         const now = new Date();
         const timeSeed = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}-${now.getHours()}`;
         let hash = 0;
@@ -424,7 +424,7 @@ function serve(cloneDir, port) {
         }
 
         const decodeSellKeySafe = (sk) => {
-            if (!sk) return sk;
+            if (!sk || sk === 'undefined' || sk === 'null' || sk === 'None') return sk;
             let dec = decodeURIComponent(sk);
             if (!dec.includes('~')) {
                 dec = Buffer.from(dec.replace(/ /g, '+'), 'base64').toString('utf8');
