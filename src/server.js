@@ -55,6 +55,8 @@ function serve(cloneDir, port) {
 
     // ── Session Isolation Middleware ──────────────────────────────────────
     const app = express();
+    const compression = require('compression');
+    app.use(compression());
     app.use(cors());
     app.use(express.json({ limit: '50mb' }));
     app.use(express.urlencoded({ extended: true, limit: '50mb' }));
@@ -220,6 +222,16 @@ function serve(cloneDir, port) {
 
     // ── Helpers ────────────────────────────────────────────────────────────
     const LOCAL_BASE = process.env.PUBLIC_URL || `http://localhost:${port}`;
+
+    const fileCache = new Map();
+    function readFileCached(fp) {
+        if (fileCache.has(fp)) return fileCache.get(fp);
+        try {
+            const content = fs.readFileSync(fp, 'utf8');
+            fileCache.set(fp, content);
+            return content;
+        } catch { return null; }
+    }
 
     function getHosts(reqSession) {
         try {
@@ -1564,7 +1576,7 @@ function serve(cloneDir, port) {
             if (fs.existsSync(fp) && fs.statSync(fp).isFile()) {
                 console.log(`📁 Proxy static: ${parsed.hostname}${pathname}`);
                 if (fp.endsWith('.html')) {
-                    let content = fs.readFileSync(fp, 'utf8');
+                    let content = readFileCached(fp);
                     content = content.replace(/<meta[^>]*http-equiv=['"]?Content-Security-Policy['"]?[^>]*>/gi, '');
                     content = rewriteUrls(content, LOCAL_BASE);
                     res.setHeader('Content-Type', 'text/html');
@@ -1618,17 +1630,17 @@ function serve(cloneDir, port) {
 
     app.get('/css', (req, res, next) => {
         const fp = path.join(getActiveData(req.session).publicDir, 'fonts.googleapis.com', 'css');
-        if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(fs.readFileSync(fp, 'utf8'), LOCAL_BASE)); }
+        if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(readFileCached(fp), LOCAL_BASE)); }
         next();
     });
     app.get('/css2', (req, res, next) => {
         const fp = path.join(getActiveData(req.session).publicDir, 'fonts.googleapis.com', 'css2');
-        if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(fs.readFileSync(fp, 'utf8'), LOCAL_BASE)); }
+        if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(readFileCached(fp), LOCAL_BASE)); }
         next();
     });
     app.get('/icon', (req, res, next) => {
         const fp = path.join(getActiveData(req.session).publicDir, 'fonts.googleapis.com', 'icon');
-        if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(fs.readFileSync(fp, 'utf8'), LOCAL_BASE)); }
+        if (fs.existsSync(fp)) { res.setHeader('Content-Type', 'text/css'); return res.send(rewriteUrls(readFileCached(fp), LOCAL_BASE)); }
         next();
     });
 
@@ -1737,13 +1749,13 @@ function serve(cloneDir, port) {
         let content = null;
         const found = findStaticFile(req.path, req.session);
         if (found) {
-            content = fs.readFileSync(found.filePath, 'utf8');
+            content = readFileCached(found.filePath);
         } else {
             // SPA fallback
             const host = getPreferredHost(req.path, req.session);
             if (host) {
                 const fp = path.join(activeData.publicDir, host, 'index.html');
-                if (fs.existsSync(fp)) content = fs.readFileSync(fp, 'utf8');
+                if (fs.existsSync(fp)) content = readFileCached(fp);
             }
         }
 
@@ -1764,7 +1776,7 @@ function serve(cloneDir, port) {
         const found = findStaticFile(req.path, req.session);
         if (!found) return next();
 
-        let content = fs.readFileSync(found.filePath, 'utf8');
+        let content = readFileCached(found.filePath);
         content = rewriteUrls(content, LOCAL_BASE);
         res.setHeader('Content-Type', isJs ? 'application/javascript' : 'text/css');
         return res.send(content);
@@ -1788,7 +1800,7 @@ function serve(cloneDir, port) {
         const fp = path.join(activeData.publicDir, host, 'index.html');
         if (!fs.existsSync(fp)) return res.status(404).send('Clone not found.');
 
-        let content = fs.readFileSync(fp, 'utf8');
+        let content = readFileCached(fp);
         content = rewriteUrls(content, LOCAL_BASE);
         res.setHeader('Content-Type', 'text/html');
         return res.send(injectHtml(content, activeData.state, LOCAL_BASE, req.session.searchContext, activeData.stationLookup, req.session.currentFlowStep));
