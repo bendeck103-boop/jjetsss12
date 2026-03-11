@@ -217,7 +217,7 @@ function serve(cloneDir, port) {
     }
 
     // ── Helpers ────────────────────────────────────────────────────────────
-    const LOCAL_BASE = `http://localhost:${port}`;
+    const LOCAL_BASE = process.env.PUBLIC_URL || `http://localhost:${port}`;
 
     function getHosts() {
         try {
