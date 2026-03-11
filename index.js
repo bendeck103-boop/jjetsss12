@@ -20,7 +20,7 @@ program
   .command('serve')
   .description('Serve the cloned SPA locally.')
   .option('-d, --dir <directory>', 'Clone directory', './clone')
-  .option('-p, --port <port>', 'Port', 3000)
+  .option('-p, --port <port>', 'Port', process.env.PORT || 3000)
   .action((options) => serve(options.dir, options.port));
 
 program.parse();
