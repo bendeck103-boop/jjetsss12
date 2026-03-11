@@ -97,9 +97,6 @@ function serve(cloneDir, port) {
 
     const getActiveData = (reqSession) => {
         if (!reqSession) return cloneRoundTrip || cloneOneWay;
-        if (typeof reqSession.currentFlowStep !== 'undefined' && reqSession.currentFlowStep === 'homepage') {
-            return cloneRoundTrip || cloneOneWay;
-        }
         if (reqSession.searchContext && !reqSession.searchContext.current.returnDate && cloneOneWay) {
             return cloneOneWay;
         }
@@ -1492,7 +1489,11 @@ function serve(cloneDir, port) {
         };
         if (current.origin || current.destination) {
             req.session.searchContext.current = current;
-            if (!req.session.searchContext.recorded.origin) req.session.searchContext.recorded = { ...current };
+
+            // Sync to the correct recorded template based on whether it's one-way or round-trip
+            const activeData = !current.returnDate && cloneOneWay ? cloneOneWay : cloneRoundTrip;
+            req.session.searchContext.recorded = { ...activeData.recordedFlightParams };
+
             console.log(`🔍 Search: ${current.origin} → ${current.destination} | ${current.departureDate} / ${current.returnDate}`);
         }
         res.json({ ok: true, searchContext: req.session.searchContext });
